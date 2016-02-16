@@ -57,7 +57,7 @@ Topics
 
 #### Unit 6 &mdash; Working with Data & the t-Distribution
 
-[**Lecture 1**](unit_6/lectures/lecture_1.pdf): Sample Mean, Sample Variance, Sample Covariance, Sample Correlation,
+[**Lecture 1**](unit_6/lectures/lecture_1.pdf): Sample Mean, Sample Variance, Sample Covariance, Sample Correlation, Median, Mode
 
 [**Lecture 2**](unit_6/lectures/lecture_1_extra.ipynb): Computung Sample Covariance, Sample Correlation, and setting DDOF.
 
