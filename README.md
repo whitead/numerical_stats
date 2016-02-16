@@ -24,13 +24,15 @@ Topics
 ----
 
 
-#### Unit 1 &mdash; Introduction
+#### [Unit 1](unit_1) &mdash; Introduction
 
-Sample Spaces, Probability Algebra of Samples, Events, Jupyter Notebook, Python Arithmetic, Markdown, Equations in LaTeX
+[**Lecture 1**](unit_1/lectures/lecture_1.pdf): Sample Spaces, Probability Algebra of Samples, Events, Jupyter Notebook, Python Arithmetic, Markdown, Equations in LaTeX
 
-#### Unit 2 &mdash; Probability
+#### [Unit 2](unit_2) &mdash; Probability
 
-Combinations & Permutations, Multidimensional Sample Spaces, Random Variables, Joints, Marginals, Marginals, Bayes' Theorem, Independence, Compound Conditionals, Conditional Independence, Expected Value
+[**Lecture 1**](unit_2/lectures/lecture_1.pdf): Combinations & Permutations, Multidimensional Sample Spaces, Random Variables, Joints, Marginals, Conditionals
+
+[**Lecture 2**](unit_2/lectures/lecture_2.pdf): Working with Joints/Marginals/Conditionals Example, Bayes' Theorem, Independence, Compound Conditionals, Conditional Independence, Table of Useful Equations
 
 #### Unit 3 &mdash; Python Basics
 

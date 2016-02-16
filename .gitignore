@@ -6,3 +6,6 @@
 #LaTeX
 *.aux
 *.log
+
+#pandoc
+README.html
