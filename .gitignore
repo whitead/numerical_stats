@@ -9,3 +9,6 @@
 
 #pandoc
 README.html
+
+#jupyter
+*.ipynb_checkpoints/
