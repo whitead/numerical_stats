@@ -1,0 +1,275 @@
+\documentclass{article}
+
+\usepackage{teaching, array}
+
+\begin{document}
+
+\begin{tdoc}{CHEM 116}{Unit 2, Lecture 2}{Numerical Methods and Statistics}
+
+ \section{Working with Marginals, Condtionals, and Joints}
+
+\subsubsection{Seasons Example}
+
+The sample space is a product space of the seasons $T$ (Winter (0), Spring
+(1), Summer (2), Fall (3) ) and $W$ if the weather is nice or not (N=nice,
+S=not nice). We know that
+\[
+\begin{array}{lr}
+\Pr(W=N|T=0) = 0 & \Pr(W=N|T=1) = 0.4\\
+\Pr(W=N|T=2) = 0.8 & \Pr(W=N|T=3) = 0.7\\
+\end{array}
+\]
+\[
+P(T=t) = \frac{1}{4}
+\]
+
+What is the probability that the weather is not nice? Use
+marginalization of conditional:
+
+\[
+\Pr(W=S) = \sum_\mathcal{T} \Pr(W=S | T) P(T) = 0.25(1 - 0) + 0.25(1 - 0.4) + 0.25(1 - 0.8) + 0.25(1 - 0.7)
+\]
+\[
+\Pr(W=S) = 0.525
+\]
+
+What is the probability that it is fall given that it is nice? Start with definition of conditional :
+\[
+\Pr(T=3|W=N) = \frac{\Pr(T=3, W=N)}{\Pr(W=N)}
+\]
+We know that $\Pr(T=3, W=N) = \Pr(W=N|T=3)\Pr(T=3)$ due to definition of conditional:
+\[
+\Pr(T=3|W=N) = \frac{\Pr(W=N|T=3)\Pr(T=3)}{\Pr(W=N)}
+\]
+Finally, we can use $\Pr(W=N) = 1 - \Pr(W=S)$, the {\bf NOT} rule:
+\[
+\Pr(T=3|W=N) = \frac{0.7\times 0.25}{1 - 0.525} = 0.368
+\]
+
+\subsection{Bayes' Theorem}
+
+We derived a well-known equation in that example called Bayes' Theorem: 
+
+\begin{equation}
+\Pr(A|B) = \frac{\Pr(B|A)\Pr(A)}{\Pr(B)}
+\end{equation}
+
+This is useful to swap the order of conditionals
+
+\subsection{Independence}
+Finally, we are ready to define independence. If the random variables
+$X$ and $Y$ are independent, then
+\begin{equation}
+\Pr(x|y) = \Pr(x)
+\end{equation}
+This implies via Bayes' Theorem
+\begin{equation}
+\Pr(y|x) = \Pr(y)
+\end{equation}
+And also implies via CPF definition
+\begin{equation}
+\Pr(x,y) = \Pr(x)\Pr(y)
+\end{equation}
+which was our {\bf AND} rule from last lecture.
+
+\vspace{0.2cm}
+In our weather example, is the season and weather independent? 
+\[
+\Pr(W=N|T=0) \neq P(W=N|T=1)
+\]
+so no.
+
+
+\subsection{Compound Conditionals}
+When writing conditionals, this is a common short-hand:
+\[
+\Pr (x = 2\, | \,Y = A, Z = 0)
+\]
+for 
+\[
+\Pr ([x = 2]\,|\, [Y = A, Z = 0])
+\]
+The conditional is always evaluated last, for example:
+\[
+\Pr(x = 2, Y = A\, | \,Z = 0)
+\]
+is also possible and means the probability of the joint $(x=2, Y=A)$
+given that $Z = 0$ 
+
+
+
+\subsection{Conditional Independence}
+$X_0$ and $X_1$ are conditionally independent given $Z$ if
+\begin{equation}
+\Pr(X_0 | Z, X_1) = \Pr(X_0 | Z)
+\end{equation}
+
+which is equivalent to
+
+\begin{equation}
+\Pr(X_0, X_1 | Z) = \Pr(X_0 | Z)\Pr(X_1 | Z)
+\end{equation}
+
+
+To use conditional independence, you must condition on $Z$. For
+example, if I want to calculate $\Pr(X_0, X_1)$, I'll need to
+condition it. Marginalizing a conditional is one way to get that
+quantity, using a compound conditional:
+\[
+\Pr(X_0, X_1) = \sum_\mathcal{Z}\Pr(X_0, X_1 | Z) \Pr(Z)
+\]
+Now it is in a form where the conditional independence applies:
+\[
+\Pr(X_0, X_1) = \sum_\mathcal{Z}\Pr(X_0 | Z) \Pr(X_1 | Z)
+\]
+This is common for sequential trials, where the trials are independent
+when conditioned on some underlying property, but dependent if we do
+not know the property. For example, let's say I have two dice, one
+that is fair and one that follows the biased die model we saw in
+class. Let's further assume that $P(D = 0) = 0.1$, where $D$ indicates
+the chosen die.
+\[
+\Pr(X=x | D = 0) = \frac{1}{6}
+\]
+\[
+\Pr(X=x | D = 1) = \frac{x}{21}
+\]
+
+If I know which die I'm rolling, then every roll is independent
+as expected: 
+\[
+\Pr (X_0 = 6, X_1 = 1 | D) = \Pr (X_0 = 6 | D) \Pr (X_1 = 1 | D)
+\]
+however, consider 
+\[
+\Pr (X_1 = 1 | X_0 = 6) = \frac{\Pr(X_1 = 1, X_0 = 6)}{\Pr (X_0 = 6)}
+\]
+As above, we'll try to condition it to exploit conditional
+independence.
+\[
+\Pr(X_1 = 1, X_0 = 6) = \Pr(X_1 = 1 | D = 0) \Pr(X_0 = 6 | D = 0) \Pr (D = 0) + 
+\]
+\[
+\Pr(X_1 = 1 | D = 1) \Pr(X_0 = 6 | D = 1) \Pr (D = 1)
+\]
+\[
+\Pr(X_1 = 1, X_0 = 6) = \frac{1}{6}\frac{1}{6}\frac{1}{10} + \frac{1}{21}\frac{6}{21}\frac{9}{10} = 0.0150
+\]
+\[
+\Pr(X_0 = 6) = \sum_{X_1} \Pr(X_1, X_0 = 6) = \frac{1}{6}\frac{1}{10}\underbrace{\sum_{x} \frac{1}{6}}_{=1} + \frac{6}{21}\frac{9}{10} \underbrace{\sum_{x} \frac{x}{21}}_{=1}
+\]
+\[
+\Pr(X_0 = 6)  = 0.274
+\]
+\[
+\Pr (X_1 = 1 | X_0 = 6) = \frac{0.0150}{0.274} = 0.0549
+\]
+Finally, to show they are not independent:
+\[
+\Pr(X_1 = 1) = \sum_{X_1} \Pr(X_1 = 1, X_0) = \frac{1}{6}\frac{1}{10}\underbrace{\sum_{x} \frac{1}{6}}_{=1} + \frac{1}{21}\frac{9}{10} \underbrace{\sum_{x} \frac{x}{21}}_{=1} = 0.0595
+\]
+
+The intuition here is that the marginal of $X_1 = 1$ considers both
+die according to the die marginals. However, knowing that $X_0 = 6$
+shifts it so that the biased die is more likely. This can be seen with
+Bayes theorem to:
+\[
+\Pr(D = 1 | X_0 = 6) \neq \Pr (D=1)
+\]
+and thus $\Pr (X_1 | X_0 = 6)$ changes from $\Pr(X_1)$.
+
+\subsection{Table of Equations}
+
+  \begin{tabular}{lr}
+    $P(x) = \sum_y P(x,y)$ & Definition of Marginal\vspace{0.15cm}\\
+    $P(x|y) = \frac{P(x,y)}{P(y)}$ & Definition of Conditional\vspace{0.15cm}\\
+    $P(x,y) = P(x|y)P(y)$ & Definition of Conditional\vspace{0.15cm}\\
+    $\sum_x P(x|y) = 1$ & Law of Total Probability/Normalization\vspace{0.15cm}\\
+    $\sum_y P(x|y)P(y) = P(x)$ & Marginilzation of Conditional\vspace{0.15cm}\\
+    $P(x|y) = \frac{P(y|x)P(x)}{P(y)}$ & Bayes' Theorem\vspace{0.15cm}\\
+    $P(x,y) = P(x)P(y)$ & Definition of Independence\vspace{0.15cm}\\
+    $P(x | y) = P(x)$ & Independence Property (x,y independent)\vspace{0.15cm}\\
+    $P(x,y | z) = P(x|z)P(y|z)$ & Conditional Independence\vspace{0.15cm}\\
+  \end{tabular}
+
+
+
+  \section{Expected Values}
+
+ Consider a random variable $Y$. Recall that $Y$ is a function that
+ takes elements in the sample space and outputs a number. For example,
+ squaring the roll of a die. The expected value of $Y$ is 
+\begin{equation}
+\pexp{Y} = \sum_\mathcal{X} P(x)Y(x)
+\end{equation}
+
+where $P(x)$ is the probability for the element in the sample
+space. Recall, however, that we also can write $P(Y = y)$. That means
+the probability that $Y$ is equal to a particular value. In that
+notation, it would be:
+
+\begin{equation}
+\pexp{Y} = \sum_\mathcal{Y} P(Y=y)y
+\end{equation}
+
+These are equivalent! Let's see an example.
+
+\subsection{Die Roll Example}
+
+Consider the random variable being the roll of a die, $D$. That would be 
+
+\[
+\pexp{D} = \frac{1}{6}\times{}1 + \frac{1}{6}\times{}2 + \frac{1}{6}\times{}3 \ldots
+\]
+
+\[
+\pexp{D} = \frac{1}{6}\times 21 = 3.5
+\]
+
+
+\subsection{2 Die Example}
+Now, consider the square of a roll of a die, $Y$. We could use the first
+equation, so that we have:
+
+\[
+\pexp{Y} = \sum_\mathcal{D} P(d)Y(d) =  \sum_{d=1,2,4...6} \frac{1}{6}d^2
+\]
+
+or using the second equation for expected value:
+\[
+\pexp{Y} = \sum_\mathcal{Y} P(Y=y)y =  \sum_{y=1^2,2^2,4^2...6^2} \frac{1}{6}y
+\]
+
+Expanding both gives:
+
+\[
+\pexp{D} = \frac{1}{6}\times{}1 + \frac{1}{6}\times{}4 + \frac{1}{6}\times{}9 \ldots
+\]
+
+\subsection{Continuous Expected Value}
+
+\begin{equation}
+\pexp{X} = \int_\mathcal{X}\,xp(x)\,dx
+\end{equation}
+
+
+\subsection{Continuous Example}
+\[
+p'(x) \propto x,\:  Q = [0,5]
+\]
+
+First, we must normalize it:
+\[
+\int_0^5 \,x\,dx = \frac{25}{2}
+\]
+\[
+p(x) = \frac{2x}{25}
+\]
+
+\[
+\int_0^5 x\times\frac{2x}{25} = \frac{2\times 125}{25\times 3} = \frac{10}{3}
+\]
+
+\end{tdoc}
+
+\end{document}

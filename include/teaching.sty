@@ -1,0 +1,94 @@
+\def\fileversion{1.0}
+\def\filedat{2012/29/03}
+
+
+
+\usepackage{graphicx}
+\usepackage{amsmath,amssymb,amsthm,amsfonts}
+
+
+%Page size
+\setlength{\oddsidemargin}{0pt}
+\setlength{\evensidemargin}{0pt}
+\setlength{\textwidth}{6.5in}
+\setlength{\topmargin}{0in}
+\setlength{\textheight}{8.5in}
+
+
+\newcommand{\ttt}[1]{\cdot 10^{#1}} %times ten to the
+\newcommand{\lp}{\left(} % left parenthesis
+\newcommand{\rp}{\right)} %right paranethesis
+\newcommand{\un}[1]{\textrm{#1}} % units
+\newcommand{\sizeof}[1]{\left|#1\right|}
+\newcommand{\vv}[1]{\textbf{#1}}
+\newcommand{\dirac}[1]{\delta\left(#1\right)}
+\newcommand{\di}[1]{\,\textrm{d}#1}
+\newcommand{\fo}[1]{\un{Fo}\left[\,#1\,\right]}
+\DeclareMathOperator*{\argmin}{argmin}
+\DeclareMathOperator*{\argmax}{argmax}
+
+%%numerical Constants
+\newcommand{\plancksi}{6.626069\ttt{-34}\,\textrm{J}\cdot \textrm{s}}
+\newcommand{\hbarsi}{1.054572\ttt{-34}\,\textrm{J}\cdot \textrm{s}}
+\newcommand{\boltz}{1.380 6504\ttt{-23}\,\textrm{J}\cdot\textrm{K}^{-1}}
+\newcommand{\Na}{6.02214\ttt{23}}
+\newcommand{\mesi}{9.109382\ttt{-31}\,\textrm{kg} } %mass of electron in si
+
+%Quantum Chemistry
+\newcommand{\ods}[1]{\frac{-\hbar^2}{2m}\frac{d^2\psi(x)}{dx^2} + #1\,\psi(x) = E\psi(x)} %1D schrodinger
+\newcommand{\bra}[1]{\left<#1\right|}
+\newcommand{\ket}[1]{\left|#1\right>}
+\newcommand{\braket}[2]{\left<#1\right|\left.#2\right>}
+
+%stat mech
+\newcommand{\sexp}[1]{\left<\,#1\,\right>}
+
+%Probability
+\renewcommand{\Pr}{\textrm{P}}
+\DeclareMathOperator{\E}{E}
+\newcommand{\Econd}[2]{\E \left( \left.#1 \, \right| \,#2 \right)}
+\newcommand{\Pcond}[2]{\Pr \left( \left.#1 \, \right| \,#2 \right)}
+\newcommand{\Escond}[2]{\E^* \left[ #1 \, \right|\left. \,#2 \right]}
+\newcommand{\pexp}[1]{\rm{E}\left[\,#1\,\right]}
+\newcommand{\Filt}[1]{\mathcal{F}_{#1}}
+\newcommand{\Ind}[1]{\mathbf{1}_{\left\{#1\right\}}}
+\DeclareMathOperator{\var}{Var}
+
+
+
+
+%Problem Environment
+%\begin{problem}{title}
+\newenvironment{problem}[1]
+ {\vspace{1ex}\noindent\ignorespaces\refstepcounter{section}\textbf {Problem~\arabic{section}:~}\underline{#1}\vspace{0.5ex}\par\ignorespacesafterend}
+{\vspace{1ex}\par\noindent\ignorespacesafterend}
+
+%\begin{assumption}
+\newcounter{assumption}[section]
+\newenvironment{assumption}
+ {\vspace{1ex}\noindent\ignorespaces\refstepcounter{assumption}\textbf {Assumption~\arabic{section}.\arabic{assumption}:~}}{\vspace{1ex}\par\noindent\ignorespacesafterend}
+
+%\begin{assumption}
+\newcounter{algorithm}[section]
+\newenvironment{algorithm}
+ {\vspace{1ex}\noindent\ignorespaces\refstepcounter{algorithm}\textbf {Algorithm~\arabic{section}.\arabic{algorithm}:~}}{\vspace{1ex}\par\noindent\ignorespacesafterend}
+
+\renewcommand{\proof}{\textbf{Proof: }}
+%Homework setup
+
+\newcommand{\theader}[3]{
+   \noindent
+   \begin{center}
+   \framebox{ \vbox{ \hbox to 5.78in { {\bf #1} \hfill \today}
+       \vspace{4mm}
+       \hbox to 5.78in { {\Large \hfill #2  \hfill} }
+       \vspace{2mm}
+       \hbox to 5.78in { {\hfill \it #3 \hfill} }
+     }
+   }
+   \end{center}
+   \vspace*{4mm}
+}
+
+%\begin{homework}{Course Name}{Homework Number}{Course Number}
+\newenvironment{tdoc}[2]{\theader{#1}{#2}}{}

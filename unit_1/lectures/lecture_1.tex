@@ -1,0 +1,279 @@
+\documentclass{article}
+
+\usepackage{teaching, array, hyperref}
+
+\begin{document}
+
+\begin{tdoc}{CHEM 116}{Unit 1, Lecture 1}{Numerical Methods and Statistics} 
+
+\section{Course Structure}
+
+\subsection{Goal of course}
+
+Real world problems aren't perfect, they require statistics. Real
+world problems require computers. This course will equip you for that.
+
+\subsection{Components of Course}
+
+{\bf Probability Theory}: The analysis of randomness of sets and variables.\vspace{0.2cm}\\
+{\bf Statistics}: The analysis of data using probability theory\vspace{0.2cm}\\
+{\bf Numerical Methods}: The solution of numerical problems with algorithms\vspace{0.2cm}\\
+
+\subsection{Course Textbooks}
+
+\begin{description}
+
+\item[Principles of Statistics]{A book concerned with the theory of statistics. It has hilarious examples and seems to be set in the Charles Dickens universe}
+
+\item[Practical Statistics Explained]{A practical handbook concerned with the application of statistics}
+
+\item[Code Academy]{A simple introduction to python: \href{https://www.codecademy.com/learn/python}{www.codecademy.com/learn/python}}
+
+\item[Python in Easy Steps]{Accessible book covering Python basics. Bright colors, friendly cartoons that talk to you in the margins.}
+
+\end{description}
+
+\subsection{Grading}
+
+This course is primarily electronic so homework and projects are more
+heavily weighted.
+
+\subsection{Policies}
+See syllabus
+
+\subsection{Example problems}
+
+\begin{itemize}
+
+\item Flow on graphs (electricity, chemical reactions, fluids)
+\item Fitting data to kinetic rate laws
+\item Solving equations numerically ($\sin(x) = x$)
+\item Create a website containing equations, graphs and text for distributing work
+
+\end{itemize}
+
+\subsection{Projects}
+
+Will be discussed more in the future. 
+
+\subsection{Python}
+
+\begin{enumerate}
+
+\item Good introductory language, used by 8/10 top CS departments
+\item Wide use out of industry
+\item Less used than MatLab and Excel, but growing
+\item Many libraries in engineering and significantly more than MatLab outside of engineering
+\item These libraries allow us to mix cool things together, like live websites with instrument data
+\item Programs will be easy distribute, easy to install, easy to view by people with no programming experience
+
+\end{enumerate}
+
+\section{Probability Theory}
+
+\subsection{Sample spaces}
+
+Sets, ordered sets, integers, real numbers. 
+
+{\bf Examples:}
+\begin{enumerate}
+
+\item $\{A, B\}$ (set)
+\item The roll of a die: $1-6$ (integers, which is an ordered set, which is a set)
+\item Cards in a 52 card deck (ordered set, which is a set)
+\item All possible molecules formed in a chemical reaction (set)
+\item Electronic configurations of a molecule (set, possibly ordered with energy)
+\item Flow rate into a tank (real number)
+\item Temperature (real number)
+\item Value of cryptographic key (integer)
+\item Pet type owned (cat, dog, fox) (set)
+
+\end{enumerate}
+
+Think about what is ordered, what is a set, what are real numbers, etc
+
+\subsection{Probability of sample spaces}
+Probability assigns a number $P$ to each sample $x$. The only
+requirement is that the sum of $P(x)$ over the sample space is
+$1$. That condition is called normalization.
+
+Notice that even if $\sum_{X} P(x) > 1$, as long as it's finite we can
+\emph{normalize} the probability by dividing it by a constant such
+that its sum is $1$. Example: 
+\begin{equation}
+P(\textrm{die roll}) = \textrm{value of die}
+\end{equation}
+
+is not normalized, because $\sum_X P(x) = 21$. Normalizing it gives:
+
+\begin{equation}
+P(\textrm{die roll}) = \frac{\textrm{value of die}}{21}
+\end{equation}
+
+\subsection{Probability Algebra - For Samples}
+
+{\bf OR}\vspace{0.5cm}\\
+The probability of sample A or sample B being drawn is exactly:
+
+\begin{equation}
+P(A\,\textrm{or}\,B) = P(A) + P(B)
+\end{equation}
+\vspace{0.2cm}
+
+{\bf AND}\vspace{0.5cm}\\
+
+If we draw two samples sequentially (!) and independently (!):
+\begin{equation}
+P(A\,\textrm{and}\,B) = P(A)P(B)
+\end{equation}
+
+For now, independence between trials means the outcome of one doesn't
+affect the probability of the other.
+
+\vspace{0.2cm}
+
+{\bf NOT}\vspace{0.5cm}\\
+
+\begin{equation}
+P(\sim A) = 1 - P(A)
+\end{equation}
+\vspace{0.2cm}
+
+These statements allow us to bridge probabilities together:\vspace{0.2cm}\\
+
+\texttt{Draw an ace of spades AND roll a 2 OR roll a 4 AND NOT own a cat}\\
+
+\vspace{0.2cm}Notice that AND is used to bridge together independent samples, OR is
+used to bridge together multiple possibilities, and NOT is used to
+``invert'' probabilities.\vspace{0.2cm}
+
+What is wrong with this statement? \vspace{0.2cm}\\
+
+\texttt{Draw an ace of spades OR roll a 2}\vspace{0.2cm}\\
+
+You cannot join samples which are from different sample spaces
+
+\subsection{Events}
+
+Events are collections of samples occurring. Events can overlap, occupy
+entire sample space or be generally messy.
+
+\begin{itemize}
+
+\item Roll an odd number
+\item Have a flow greater than 2 kg/s
+\item Have a flow between 2 and 4 kg/s
+
+\end{itemize}
+\vspace{0.5cm}
+
+{\bf AND} and {\bf NOT} apply to probabilities of events. {\bf OR}
+only applies if the events do not overlap (mutually exclusive). For
+example if event A is roll an odd number and event B is roll a 3,
+event A includes event B meaning the normal {\bf OR} does not
+apply. To deal with this, generally you redefine your event or
+compute the intersection $P(A\cap B)$ and use:
+\begin{equation}
+P(A\,\textrm{or}\,B) = P(A) + P(B) - P(A \cap B)
+\end{equation}
+I hesitate to say $P(A \cap B)$ means probability of $A$ and $B$
+occurring, because that sounds similar to what was above. Think
+instead that $P(A \cap B)$ is the probability of $A$ and $B$ occurring
+simultaneously. Alternatively, $P(A \cap B)$ is the sum of
+probabilities of the elements in the sample space that overlap in $A$
+and $B$.
+
+\subsection{Independent samples and combination vs permutation}
+
+When sampling multiple independent trials/events/samples, the {\bf
+  AND} rule applies to permutations. A {\bf combination} of events
+have no ordering - order does not matter. A particular sequence from
+those events is called a {\bf permutation} - order
+matters\vspace{0.2cm}
+
+Sometimes we do not care about order, like when rolling two dice:
+$3,2$ is the same as $2,3$. There are two permutations, and we must
+consider both to get the probability of the whole 2 observation
+combination. This can be done with the {\bf OR} rule:
+
+\begin{equation}
+P(3,2) = P(3)\times P(2) + P(2) \times P(3) = 2\times P(3)\times P(2)
+\end{equation}
+
+So, to get the probability of a permutation we can just use the {\bf
+  AND} rule. To get the probability of a combination, we must use the
+{\bf AND} rule for each permutation and use the {\bf OR} rule to
+combine each permutation that is possible for the combination. For
+example, a combination of 1,2,3 is the sum of the probabilities of
+each possible permutation of rolling a 1,2,3:
+\begin{enumerate}
+\item $P(\textrm{perm}: 1,2,3) = P(1)\cdot P(2) \cdot P(3) = \frac{1}{6^3}$
+\item $P(\textrm{perm}: 1,3,2) = P(1)\cdot P(2) \cdot P(3) = \frac{1}{6^3}$  
+\item $P(\textrm{perm}: 2,3,1) = P(1)\cdot P(2) \cdot P(3) = \frac{1}{6^3}$
+\item $P(\textrm{perm}: 2,1,3) = P(1)\cdot P(2) \cdot P(3) = \frac{1}{6^3}$
+\item $P(\textrm{perm}: 3,1,2) = P(1)\cdot P(2) \cdot P(3) = \frac{1}{6^3}$
+\item $P(\textrm{perm}: 3,2,1) = P(1)\cdot P(2) \cdot P(3) = \frac{1}{6^3}$
+\end{enumerate}
+So the probability of the combination of 1,2,3 is
+$\frac{6}{6^3}$. 
+
+\subsection{Uniform Probability Sample Spaces} 
+
+If all samples have equal probabilities probabilities, the probability of a
+sample is
+
+\begin{equation}
+P(x) = \frac{1}{Q}
+\end{equation}
+where $Q$ is the sample space size.
+\vspace{0.2cm}
+
+
+The probability of an \emph{event} occurring is the number of samples
+in the event, $q$, divided by the size of the sample space, $Q$:
+
+\begin{equation}
+P(\textrm{event}) = \frac{q}{Q}
+\end{equation}
+
+For example, the probability of rolling an odd number is $3 / 6$. 
+
+
+The probability of a \emph{combination} occurring is then the number of
+permutations, $n$, times the probability of a single permutation:
+\begin{equation}
+P(\textrm{combination}) = n P(\textrm{permutation})
+\end{equation}
+\vspace{0.2cm}
+
+See the above permutation example to see this. Notice this is about multiple observations, whereas the previous two equations are about single observations.
+
+\subsection{Tricky concepts to review}
+
+\begin{description}
+
+\item [Independence]: For now it means the trials don't affect one
+another. One way to tell is if the trials can be permuted, they are
+independent.\vspace{0.2cm}\\
+
+\item[{\bf OR}]: Cannot combine statements in different samples spaces, whereas {\bf AND} can cross sample spaces.\vspace{0.2cm}\\
+
+\item[Normalization]: As long as your made-up probability measure is
+finite everywhere, it can be normalized.
+
+\item[Combination vs Permutation]: A permutation is a particular
+  ordering of a combination. 
+
+\item[Event vs. Observation]: I've used observation here to indicate
+  the generation of a sample (outcome). The generation of the sample
+  may correspond to an event, but don't confuse the word `event' with
+  meaning we generated a sample. An event is a set of samples, where
+  if any elements of the set occur then we say the event occured. An
+  example of an event is the set of ${1,5}$ for rolling a die. The
+  observation, or generation of a sample, could be 1 for example.
+
+\end{description}
+
+\end{tdoc}
+
+\end{document}

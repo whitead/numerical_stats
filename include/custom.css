@@ -1,0 +1,32 @@
+html{
+    background-color: inherit;
+}
+
+
+.input_area {
+    font-size:150%;
+}
+
+.rendered_html code {
+  border: 0;
+  background-color: #ddd;
+  color: #293;
+  font-size: 100%;
+  font-family: monospace;
+  padding: 2px 4px;
+  border-radius: 4px;
+  margin:2px;
+}
+
+.naked-img {
+    margin-left: 15%;
+}
+
+.input_prompt {
+    visibility:hidden;
+}
+
+
+.my-h2{
+    color: #FF00FF;
+}
