@@ -61,7 +61,7 @@ Topics
 
 [**Lecture 2**](unit_6/lectures/lecture_1_extra.ipynb): Computung Sample Covariance, Sample Correlation, and setting DDOF.
 
-[**Lecture 3**](unit_6/lectures/lecture_2.ipynb): Pandas, Confidence Intervals, T-values, t-distribution
+[**Lecture 3**](unit_6/lectures/lecture_2.ipynb): Central Limit Theorem,  Computing Confidence Intervals, T-values, t-distribution
 
 #### Unit 7 &mdash; Linear Algebra in Python
 
