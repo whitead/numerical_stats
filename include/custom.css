@@ -3,7 +3,7 @@ html{
 }
 
 
-.input_area {
+.reveal .input_area {
     font-size:150%;
 }
 
@@ -22,11 +22,15 @@ html{
     margin-left: 15%;
 }
 
-.input_prompt {
+.reveal .input_prompt {
     visibility:hidden;
 }
 
 
 .my-h2{
     color: #FF00FF;
+}
+
+.reveal h2 {
+    overflow: hidden;
 }
