@@ -55,7 +55,7 @@ Topics
 [**Lecture 2**](unit_5/lectures/lecture_2.ipynb): Normal Distribution, Cumulative Distribution Functions, Intervals on Normal Distribution, Standard Normal Distribution (Z-Values), Visualizing the Normal Distribution, Sampling from a Model, Defining Numpy Functions
 
 
-#### Unit 6 &mdash; Working with Data & the t-Distribution
+#### [Unit 6](unit_6) &mdash; Working with Data & the t-Distribution
 
 [**Lecture 1**](unit_6/lectures/lecture_1.pdf): Sample Mean, Sample Variance, Sample Covariance, Sample Correlation, Median, Mode
 
@@ -63,7 +63,10 @@ Topics
 
 [**Lecture 3**](unit_6/lectures/lecture_2.ipynb): Central Limit Theorem,  Computing Confidence Intervals, T-values, t-distribution
 
-#### Unit 7 &mdash; Linear Algebra in Python
+#### [Unit 7](unit_7) &mdash; Linear Algebra in Python
 
-Matrix Algebra, Solving Systems of Equations, Eigenvector/Eigenvalue Python Debugging, Numerical Differentiation, Integration with Data
+[**Lecture 1**](unit_7/lectures/lecture_1.ipynb): Matrix Algebra (`linalg`), Solving Systems of Equations, Eigenvector/Eigenvalue, Matrix Rank, Widgets (Button, Text, Interactive), Matplotlib Interactive
+
+[**Lecture 2**](unit_7/lectures/lecutre_2.ipynb): Numerical Differentiation, Numerical Integration via Trapezoidal Rule, Numerical Integration in Scipy, Anonymous Functions (`lambda`), Debugging Functions
+
 
