@@ -67,6 +67,6 @@ Topics
 
 [**Lecture 1**](unit_7/lectures/lecture_1.ipynb): Matrix Algebra (`linalg`), Solving Systems of Equations, Eigenvector/Eigenvalue, Matrix Rank, Widgets (Button, Text, Interactive), Matplotlib Interactive
 
-[**Lecture 2**](unit_7/lectures/lecutre_2.ipynb): Numerical Differentiation, Numerical Integration via Trapezoidal Rule, Numerical Integration in Scipy, Anonymous Functions (`lambda`), Debugging Functions
+[**Lecture 2**](unit_7/lectures/lecture_2.ipynb): Numerical Differentiation, Numerical Integration via Trapezoidal Rule, Numerical Integration in Scipy, Anonymous Functions (`lambda`), Debugging Functions
 
 
