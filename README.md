@@ -69,4 +69,8 @@ Topics
 
 [**Lecture 2**](unit_7/lectures/lecture_2.ipynb): Numerical Differentiation, Numerical Integration via Trapezoidal Rule, Numerical Integration in Scipy, Anonymous Functions (`lambda`), Debugging Functions
 
+#### [Unit 8](unit_8) &mdash; Optimization
 
+[**Lecture 1**](unit_8/lectures/lecture_1.ipynb): Common mistakes with functions, Scope, Root Finding in 1D, Minimization in 1D, Convexity
+
+[**Lecture 2**](unit_8/lectures/lecture_2.ipynb): Root finding in multiple dimensions, Minimization in multiple dimensions, Bounded Optimization, Non-convex Optimization
