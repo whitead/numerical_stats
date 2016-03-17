@@ -74,3 +74,13 @@ Topics
 [**Lecture 1**](unit_8/lectures/lecture_1.ipynb): Common mistakes with functions, Scope, Root Finding in 1D, Minimization in 1D, Convexity
 
 [**Lecture 2**](unit_8/lectures/lecture_2.ipynb): Root finding in multiple dimensions, Minimization in multiple dimensions, Bounded Optimization, Non-convex Optimization
+
+#### [Unit 9](unit 9): &mdash; MATLAB
+
+#### [Unit 10](unit 10): &mdash; Hypothesis Testing
+
+#### [Unit 11](unit 11): &mdash; Regression
+
+#### [Unit 12](unit 12): &mdash; Differential Equations & Uncertinaty Propogation
+
+#### [Unit 13](unit 13): &mdash; Excel
