@@ -75,12 +75,14 @@ Topics
 
 [**Lecture 2**](unit_8/lectures/lecture_2.ipynb): Root finding in multiple dimensions, Minimization in multiple dimensions, Bounded Optimization, Non-convex Optimization
 
-#### [Unit 9](unit 9): &mdash;  Hypothesis Testing
+#### [Unit 9](unit_9): &mdash;  Hypothesis Testing
 
-#### [Unit 10](unit 10): &mdash;MATLAB
+[**Lecture 1**](unit_8/lectures/lecture_1.ipynb): Introduction to Hypothesis Testing, the zM and Student's t-Test
 
-#### [Unit 11](unit 11): &mdash; Regression
+#### [Unit 10](unit_10): &mdash;MATLAB
 
-#### [Unit 12](unit 12): &mdash; Differential Equations & Uncertinaty Propogation
+#### [Unit 11](unit_11): &mdash; Regression
 
-#### [Unit 13](unit 13): &mdash; Excel
+#### [Unit 12](unit_12): &mdash; Differential Equations & Uncertinaty Propogation
+
+#### [Unit 13](unit_13): &mdash; Excel
