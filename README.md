@@ -75,9 +75,9 @@ Topics
 
 [**Lecture 2**](unit_8/lectures/lecture_2.ipynb): Root finding in multiple dimensions, Minimization in multiple dimensions, Bounded Optimization, Non-convex Optimization
 
-#### [Unit 9](unit 9): &mdash; MATLAB
+#### [Unit 9](unit 9): &mdash;  Hypothesis Testing
 
-#### [Unit 10](unit 10): &mdash; Hypothesis Testing
+#### [Unit 10](unit 10): &mdash;MATLAB
 
 #### [Unit 11](unit 11): &mdash; Regression
 
