@@ -77,7 +77,9 @@ Topics
 
 #### [Unit 9](unit_9): &mdash;  Hypothesis Testing
 
-[**Lecture 1**](unit_8/lectures/lecture_1.ipynb): Introduction to Hypothesis Testing, the zM and Student's t-Test
+[**Lecture 1**](unit_9/lectures/lecture_1.ipynb): Introduction to Hypothesis Testing, the zM and Student's t-Test
+
+[**Lecture 2**](unit_9/lectures/lecture_2.ipynb): Non-Parametric Statistics, Wilcoxon Sum of Ranks, Wilcoxon Signed Rank, Poisson Test
 
 #### [Unit 10](unit_10): &mdash;MATLAB
 
