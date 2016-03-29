@@ -12,3 +12,4 @@ README.html
 
 #jupyter
 *.ipynb_checkpoints/
+*.html
