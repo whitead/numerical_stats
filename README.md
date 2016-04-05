@@ -89,10 +89,11 @@ Topics
 
 [**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_11/lectures/lecture_1.ipynb): Shapiro-Wilk Normality Test, Ordinary Least-Squares Linear Regression in 1- (OLS-1D) and N dimensions (OLS-ND), Standard error, Uncertainty in OLS-1D, OLS-ND, Fit coefficient hypothesis tests, Fit coefficient confidence intervals, Overview of steps to justify and perform regression (bottom of lecture)
 
-[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_12/lectures/lecture_2.ipynb): Non-linear regression and error analysis. Deconvoluting spectrum example.
+[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_12/lectures/lecture_2.ipynb): Non-linear regression and error analysis. Deconvoluting spectrum example.
 
-[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_11/lectures/lecture_2.ipynb): Non-linear regression and uncertainty, regression in MATLAB and Excel
+[**Lecture 3**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_11/lectures/lecture_3.ipynb): Regressing categorical data with discrete domains
 
 #### [Unit 12](unit_12): &mdash; Differential Equations & Uncertinaty Propogation
 
-#### [Unit 13](unit_13): &mdash; Excel
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_12/lectures/lecture_1.ipynb): Standard form and categorizing differential equations, Solving ODEs
+
