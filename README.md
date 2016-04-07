@@ -97,5 +97,5 @@ Topics
 
 [**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_12/lectures/lecture_1.ipynb): Standard form and categorizing differential equations, Solving ODEs
 
-[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_12/lectures/lecture_1.ipynb): Error propagation through numerical derivatives, statistical fallacies
+[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_12/lectures/lecture_2.ipynb): Error propagation through numerical derivatives, statistical fallacies
 
