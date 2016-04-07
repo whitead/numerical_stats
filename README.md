@@ -93,7 +93,9 @@ Topics
 
 [**Lecture 3**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_11/lectures/lecture_3.ipynb): Regressing categorical data with discrete domains
 
-#### [Unit 12](unit_12): &mdash; Differential Equations & Uncertinaty Propogation
+#### [Unit 12](unit_12): &mdash; Differential Equations & Uncertainty Propagation
 
 [**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_12/lectures/lecture_1.ipynb): Standard form and categorizing differential equations, Solving ODEs
+
+[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_12/lectures/lecture_1.ipynb): Error propagation through numerical derivatives, statistical fallacies
 
