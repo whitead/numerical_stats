@@ -99,3 +99,6 @@ Topics
 
 [**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_12/lectures/lecture_2.ipynb): Error propagation through numerical derivatives, statistical fallacies
 
+#### [Unit 13](unit_13): &mdash; Working with Data
+
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_13/lectures/lecture_1.ipynb): Dealing with duplicate, missing, NaN, non-contiguous, out of order data, Joining datasets, Using Pandas, Using Seaborn, Computing Running Means
