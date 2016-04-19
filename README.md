@@ -95,6 +95,8 @@ Topics
 
 [**Lecture 4**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_11/lectures/lecture_4.ipynb): Regressing with constant uncertainty/measurement error in independent and/or dependent variables
 
+[**Lecture Review**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_11/lectures/lecture_review.ipynb): Examples and overview of the regression unit
+
 #### [Unit 12](unit_12): &mdash; Differential Equations & Uncertainty Propagation
 
 [**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_12/lectures/lecture_1.ipynb): Standard form and categorizing differential equations, Solving ODEs
