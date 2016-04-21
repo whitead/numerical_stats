@@ -112,3 +112,5 @@ Topics
 #### [Unit 14](unit_14): &mdash; User Interfaces
 
 [**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_14/lectures/lecture_1.ipynb): Creating and writing animations
+
+[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_14/lectures/lecture_2.ipynb): Introduction to HTML, CSS, JS and modifying notebook style
