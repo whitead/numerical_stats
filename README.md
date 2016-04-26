@@ -114,3 +114,7 @@ Topics
 [**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_14/lectures/lecture_1.ipynb): Creating and writing animations
 
 [**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_14/lectures/lecture_2.ipynb): Introduction to HTML, CSS, JS and modifying notebook style
+
+#### [Unit 15](unit_15): &mdash; What to do now
+
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_15/lectures/lecture_1.ipynb): Next steps to learn more about numerical methods, statistics, and programming
