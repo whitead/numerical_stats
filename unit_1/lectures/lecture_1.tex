@@ -215,7 +215,7 @@ each possible permutation of rolling a 1,2,3:
 \item $P(\textrm{perm}: 3,2,1) = P(1)\cdot P(2) \cdot P(3) = \frac{1}{6^3}$
 \end{enumerate}
 So the probability of the combination of 1,2,3 is
-$\frac{6}{6^3}$. 
+$\frac{6}{6^3}$.
 
 \subsection{Uniform Probability Sample Spaces} 
 
@@ -246,14 +246,28 @@ P(\textrm{combination}) = n P(\textrm{permutation})
 \end{equation}
 \vspace{0.2cm}
 
-See the above permutation example to see this. Notice this is about multiple observations, whereas the previous two equations are about single observations.
+See the above permutation example to see this. Notice this is about multiple observations, whereas the previous two equations are about single observations. For example, consider the probability of rolling an even number and an odd number with a die within two rolls:
 
-\subsection{Tricky concepts to review}
+\begin{equation}
+P(\textrm{permutation} = P(\textrm{even event}) \times P(\textrm{odd event})
+\end{equation}
+
+\begin{equation}
+P(\textrm{permutation} = \frac{3}{6} \times \frac{3}{6} = \frac{1}{4}
+\end{equation}
+
+The number of permutations for rolling an odd and even number within two rolls is two: even then odd or odd then even.
+
+\begin{equation}
+P(\textrm{combination}) = n P(\textrm{permutation}) = 2 \times \frac{1}{4} = \frac{1}{2}
+\end{equation}
+
+\subsection{Concepts to Consider}
 
 \begin{description}
 
 \item [Independence]: For now it means the trials don't affect one
-another. One way to tell is if the trials can be permuted, they are
+another. One way to tell is if the trials can be permuted without changing probability, they are
 independent.\vspace{0.2cm}\\
 
 \item[{\bf OR}]: Cannot combine statements in different samples spaces, whereas {\bf AND} can cross sample spaces.\vspace{0.2cm}\\
