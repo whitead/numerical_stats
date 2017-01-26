@@ -73,7 +73,8 @@ Will be discussed more in the future.
 
 \subsection{Sample spaces}
 
-Sets, ordered sets, integers, real numbers. 
+Sets, ordered sets, integers, real numbers. We denote a sample space
+with $Q$ and the number of elements in it with $|Q|$.
 
 {\bf Examples:}
 \begin{enumerate}
@@ -93,9 +94,9 @@ Sets, ordered sets, integers, real numbers.
 Think about what is ordered, what is a set, what are real numbers, etc
 
 \subsection{Probability of sample spaces}
-Probability assigns a number $P$ to each sample $x$. The only
-requirement is that the sum of $P(x)$ over the sample space is
-$1$. That condition is called normalization.
+Probability assigns a number $P$ to each sample $x$ in the sample
+space $Q$. The only requirement is that the sum of $P(x)$ over the
+sample space is $1$. That condition is called normalization.
 
 Notice that even if $\sum_{X} P(x) > 1$, as long as it's finite we can
 \emph{normalize} the probability by dividing it by a constant such
@@ -223,17 +224,17 @@ If all samples have equal probabilities probabilities, the probability of a
 sample is
 
 \begin{equation}
-P(x) = \frac{1}{Q}
+P(x) = \frac{1}{|Q|}
 \end{equation}
-where $Q$ is the sample space size.
+where $|Q|$ is the sample space size.
 \vspace{0.2cm}
 
 
 The probability of an \emph{event} occurring is the number of samples
-in the event, $q$, divided by the size of the sample space, $Q$:
+in the event, $q$, divided by the size of the sample space, $|Q|$:
 
 \begin{equation}
-P(\textrm{event}) = \frac{q}{Q}
+P(\textrm{event}) = \frac{q}{|Q|}
 \end{equation}
 
 For example, the probability of rolling an odd number is $3 / 6$. 

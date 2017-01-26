@@ -62,10 +62,10 @@
   Let's say my sample space is 5 digit numbers. How large is it?\\
   $$10^5$$
 
-  Given that there are three possible pets (cats, foxes, dogs, horse)
-  and everyone owns 2, what's the sample space size of pet ownership?\\ If
-  we disallow multiple pets of the same type: $\frac{4!}{(4 - 2)!} =
-  12$. Or $4^2 = 16$
+  Given that there are four possible pets (cats, foxes, dogs, horse)
+  and everyone owns 2, what's the sample space size of pet
+  ownership?\\ If we disallow multiple pets of the same type:
+  $\frac{4!}{(4 - 2)!} = 12$. Or $4^2 = 16$
 
   What's the sample space size of a shuffled deck of cards?\\
   $$52! \approx 10^{68}$$
@@ -87,9 +87,10 @@ higher.
 \end{itemize} 
 
 Sample spaces can be joined together into {\bf product spaces},
-indicated as $Q_1\times Q_2$. A product space is every possible
+indicated as $Q_1 \otimes Q_2$. A product space is every possible
 pairing of two spaces, meaning the number of elements is the product
-of the number of elements of the component spaces.
+of the number of elements of the component spaces ($|Q| = |Q_1| \times
+|Q_2|$).
 
 \begin{itemize}
 
@@ -98,7 +99,7 @@ of the number of elements of the component spaces.
 \item Concentration of reactant A, B and product C
 \item The roll of two die is a product space, $6\times 6$
 \item The roll of $n$-die is $6^n$
-\item $\{-1,0,1\} \times \{0,1\} = \{(-1,0), (0,0), (1,0), (-1,1), (0,1), (1,1)\}$
+\item $\{-1,0,1\} \otimes \{0,1\} = \{(-1,0), (0,0), (1,0), (-1,1), (0,1), (1,1)\}$
 
 \end{itemize}
 
@@ -108,7 +109,8 @@ one. Instead we are observing samples composed of multiple values
 
 \subsection{Event vs Sample on Product Spaces}
 Is rolling a $5$ a sample or event? What if our space is rolling two
-dice? Either $n=1,\; Q=6$ or $n=2\times 6 - 1,\; Q=36$.  $1/6$ vs $11/36$.
+dice? Either $n=1,\; Q=\{1,\ldots,6\}$ or $n=2\times 6 - 1,\; Q=\{1,\ldots,6\} \otimes \{1,\ldots,6\}$.
+$1/6$ vs $11/36$.
 
 What about weather by day of the week. If it's snowing is now an
 event. Why?
@@ -207,136 +209,6 @@ due to normalization
 \int_L^U p(x) \,dx = 1,\:\Rightarrow p(x) = \frac{1}{U-L}
 \]
 
-
-\section{Equations with Random Variables}
-
-\subsection{Joint Probability Distribution}
-We will indicate the probability that two rvs, $X$ and $Y$, adopt a
-particular value $x$ and $y$ \emph{simultaneously} as $\Pr(x,y)$. This
-is called a joint probability distribution. Joints indicate
-simultaneous occurance, unlike our {\bf AND} from last lecture.
-
-To treat successive observations, we simply rearrange our current
-definitions. Take flipping a coin. We redefine our sample space to be
-the product space of trials flip 1 and flip 2, so $(H,H)$, $(H,T)$,
-$(T,H)$ and $(T,T)$ where $H=$heads, $T=$tails. Next, we say $X$ is the
-observation of trial 1 and $Y$ is the observation of trial 2.
-
-The JPD is more flexible than our {\bf AND} since it treats successive
-and simultaneous.
-
-The continuous analogue is $p(x,y)$, which is not meaningful unless
-integrated over an area. Example: observing particle in fixed area.
-
-\subsection{Marginal Probability Distribution}
-The marginal probability distribution function is defined as
-\begin{equation}
-\Pr(x) = \sum_y P(x,y)
-\end{equation}
-The marginal means the probability of $X=x, Y=y_0$ or $X=x, Y=y_1$ or
-$X=x, Y=y_2$, etc. For example, if $X$ is the weather and $Y$ is the
-day of the week, it is the probability of the weather `averaged' over
-all possible weekdays.
-
-The marginal allows us to remove a rv or sample dimension. That
-process is called {\bf marginalizing} and the resulting $\Pr(x)$ is
-called the marginal. Marginalization works even if the two pieces of
-the joint are not independent. 
-
-\subsection{Conditional Probability Distribution}
-A conditional probability distribution allows us to fix one sample,
-event, or rv in order to calculate another. It is written as
-$\Pr(X=x|Y=y)$. For example, what is the probability of having the flu
-given I'm showing cold/flu symptomps. Conditionals are generally much
-easier specify, understand and measure than joints or marginals.
-
-\begin{itemize}
-
-\item The probability a reaction being complete given that the temperature is less than 750 K
-\item The probability I visited node C given that I started in node A and ended in node B
-\item The probability a test shows I have influenza given that I do not have influenza (false negative)
-\item The probability I rolled a 7 given that one die shows 4. 
-
-\end{itemize}
-
-The definition of a conditional probability distribution is
-\begin{equation}
-\Pr(x|y) = \frac{\Pr(x,y)}{\Pr(y)}
-\end{equation}
-
-A CPD is a full-fledged PMF, so $\sum_\mathcal{X} \Pr(x|y) = 1$ due to
-normalization, sometimes called the law of total probability.  If we
-forget what goes in the denominator on the right-hand-side we can
-quickly see that $\sum_\mathcal{X} \Pr(x,y) / \Pr(y) = 1$ whereas
-$\sum_\mathcal{X} \Pr(x,y) / \Pr(x) \neq 1$.
-
-The definition is the same for continuous distributions.
-
-This leads to an alternative way to marginalize:
-\[
-\sum_\mathcal{Y} \Pr(x|y) \Pr(y) = \sum_\mathcal{Y} \Pr(x,y) = \Pr(x)
-\]
-
-
-\subsection{Viewing Conditionals as Sample Space Reduction}
-
-Consider guessing binary numbers at random between 0 and 7:\vspace{0.25cm}
-
-\begin{tabular}{l}
-000\\
-001\\
-010\\
-011\\
-100\\
-101\\
-110\\
-111\\
-\end{tabular}\vspace{0.25cm}
-
-The probability of sampling 4 (100), 
-\[
-\Pr(x = 100) = \frac{1}{8}
-\] 
-Now, consider the rv $Y$, the number of non-zero bits. What is
-\[
-\Pr(x = 100 | Y = 1)
-\]
-We could rewrite this in terms of the joint and marginal, as 
-\[
-\Pr(x = 100 | Y = 1) = \frac{(x = 100, Y = 1)}{Y = 1} = \frac{1 / 8}{3 / 8} = \frac{1}{3}
-\]
-Or we could recognize that the condition of $Y = 1$ reduces the sample
-space to 3, because there are only 3 samples that are consistent with
-$Y = 1$. Thus, the probability of $x = 100$ is $1/3$, since $x = 100$
-has a single permutation and $Q_c$, the conditional sample space is
-$3$.
-
-\section{Tricky Concepts}
-
-\begin{description}
-
-\item[Product Spaces] A product space is for joining two possibly
-  dependent sample spaces. It can also be used to join sequential trials.
-
-\item[Event vs Sample on Product Spaces] Things which were samples on
-  the components of a product space are now events due to permutations
-
-\item[Random Variables] They assign a numerical value at each sample
-  in a sample space, but we typically care about the probability of
-  those numerical values (PMF). So $X$ goes from sample to number and
-  $\Pr(x)$ goes from number to probability.
-
-\item[Continuous PDF] A pdf is a tool for computing things, not
-  something meaningful by itself.
-
-\item[Marginal Probability Distribution] A marginal `integrates/sums'
-  out other samples/random variables/events we are not interested in.
-
-\item[Joint vs Conditional] People almost never think in terms of
-  joints. Conditionals are usually easier to think about, specify, and
-  be a way to attack problems. 
-
-\end{description}
 
 \end{tdoc}
 
