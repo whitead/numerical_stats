@@ -36,9 +36,9 @@ Topics
 
 #### [Unit 3](unit_3) &mdash; Python Basics
 
-[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_3/lectures/lecture_1.ipynb): Floating Point Representation, Python Variables, String Formatting
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_3/lectures/lecture_1.ipynb):  Python Variables, String Formatting, Representing Integers
 
-[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_3/lectures/lecture_2.ipynb): Python Booleans, Default Booleans, Floating Point Booleans, Lists, Slicing, Range, For loops, Numpy Arrays, Basic Plotting
+[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_3/lectures/lecture_2.ipynb): Floating Point Representation, Python Booleans, Default Booleans, Floating Point Booleans, Lists, Slicing, Range, For loops, Numpy Arrays, Basic Plotting
 
 #### [Unit 4](unit_3) &mdash; Jupyter Basics & Probability Distributions 
 
