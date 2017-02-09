@@ -14,7 +14,7 @@ require(
     function(head, Reveal){
         // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
 		
-		//$('section:first').attr('data-background','background.jpg')
+	$('section:first-child > section:first-child').attr('data-background','video.mp4')
         Reveal.initialize({
             controls: false,
             progress: true,

@@ -37,3 +37,7 @@ html{
 .my-h2{
     color: #FF00FF;
 }
+
+section:first-child > section:first-child > div {
+    background-color: rgba(255, 255,255, 0.5);
+}
