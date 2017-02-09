@@ -1,0 +1,43 @@
+html{
+    background-color: inherit;
+}
+
+.rendered_html p {
+    font-size: 125%;
+}
+
+.reveal .input_area {
+    font-size:150%;
+}
+
+.reveal .rendered_html code {
+  border: 0;
+  background-color: #ddd;
+  color: #293;
+  font-size: 100%;
+  font-family: monospace;
+  border-radius: 4px;
+  margin:2px;
+  padding: 5px;
+}
+
+.reveal pre code {
+    padding: 10px;
+}
+
+.naked-img {
+    margin-left: 15%;
+}
+
+.reveal .input_prompt {
+    visibility:hidden;
+}
+
+
+.my-h2{
+    color: #FF00FF;
+}
+
+.reveal h2 {
+    overflow: hidden;
+}

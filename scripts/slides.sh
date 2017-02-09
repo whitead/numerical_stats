@@ -1,2 +1,2 @@
-#!/bin/bash
-docker run --net=host -it  -v /home/whitead/numerical_stats/:/home/jovyan/work jupyter/base-notebook jupyter nbconvert --to slides $1 --post serve --ServePostProcessor.reveal_cdn='https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1' --ServePostProcessor.port=8000 --ServerPostProcessor.ip='*'
+ln -s include/custom.css `dirname $1`
+docker run -p 8888:8888 -it -v C:\Users\white\numerical_stats:/home/jovyan/work notebook jupyter nbconvert --to slides $1 --post serve --ServePostProcessor.port=8888 --ServePostProcessor.ip=0.0.0.0 --template=include/custom_slides.tpl  --ServePostProcessor.reveal_cdn=https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.4.1
