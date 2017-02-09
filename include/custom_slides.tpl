@@ -13,6 +13,8 @@ require(
     ],
     function(head, Reveal){
         // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
+		
+		//$('section:first').attr('data-background','background.jpg')
         Reveal.initialize({
             controls: false,
             progress: true,
@@ -20,6 +22,7 @@ require(
             history: true,
             theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
             transition: 'convex',
+			backgroundTransition: 'fade',
             // Optional libraries used to extend on reveal.js
             dependencies: [
                 { src: "{{resources.reveal.url_prefix}}/lib/js/classList.js",
@@ -39,6 +42,7 @@ require(
           $(".reveal").scrollTop(0);
         };
         Reveal.addEventListener('slidechanged', update_scroll);
+	
     }
 );
 </script>

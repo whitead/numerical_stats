@@ -14,3 +14,6 @@ README.html
 #jupyter
 *.ipynb_checkpoints/
 *.html
+
+#custom.css in non-include directory
+unit_*/lectures/custom.css
