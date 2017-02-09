@@ -23,6 +23,8 @@ maximizes $P(x)$, written as:
 \argmax_x P(x)
 \end{equation}
 
+Think of an expected value as a measure of the center point of the sample space. 
+
 \subsection{Die Roll Example}
 
 Consider a fair die example, where $d$ is an element in our sample
@@ -36,6 +38,8 @@ occuring is $1/6$.
 \[
 \pexp{D} = \frac{1}{6}\times 21 = 3.5
 \]
+
+Notice that the expected value is NOT an element of the sample space.
 
 \subsection{Unfair Die Example}
 Now consider our unfair die, where
@@ -83,7 +87,7 @@ S(x) = S(\, (x_1, x_2)\, ) = x_1 + x_2
 Now we can plug these into our expected value equation:
 
 \[
-\pexp{S} = \sum_{Q} P(X=x)S(x) = \sum_{(x_1,x_2) \in Q} \frac{1}{36} S( (x_1, x_2) )
+\pexp{S} = \sum_{Q} P(X=x)S(x) = \sum_{(x_1,x_2) \in Q_2} \frac{1}{36} S( (x_1, x_2) )
 \]
 
 \[
