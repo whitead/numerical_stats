@@ -44,9 +44,7 @@ Topics
 
 [**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_4/lectures/lecture_1.ipynb): Python Data Types (dictionaries, tuples, ints, floats), Function Arguments, Jupter Notebook Format, IPython Magic, Updating/Installing New Packages, Exporting Notebooks, Notebook Extensions, Python Tutor in Notebooks,
 
-[**Lecture 2**](unit_4/lectures/lecture_2_part_1.pdf):Bernoulli Distribution, Support, Binomial Distribution, Poisson Distribution, Exponential Distribution, Normal Distribution I, Discrete Probability Intervals, Continuous Probability Intervals, Prediction Intervals Introduced
-
-[**Lecture 3**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_4/lectures/lecture_2_part_2.ipynb): Plotting Bargraphs, Style Files, Plotting Discrete vs Continuous, Visualzing Probability Distributions, LaTeX in Plots, Vertical/Horizontal Lines
+[**Lecture 2**](unit_4/lectures/lecture_2.pdf): Expected Values and Variance
 
 #### [Unit 5](unit_5) &mdash; Working with Probability Distributions
 
