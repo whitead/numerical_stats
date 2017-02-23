@@ -26,34 +26,44 @@ Topics
 
 #### [Unit 1](unit_1) &mdash; Introduction
 
-[**Lecture 1**](unit_1/lectures/lecture_1.pdf): Sample Spaces, Probability Algebra of Samples, Events, Jupyter Notebook, Python Arithmetic, Markdown, Equations in LaTeX
+[**Lecture 1**](unit_1/lectures/lecture_1.pdf): Sample Spaces, Probability Algebra of Samples, Events
 
 #### [Unit 2](unit_2) &mdash; Probability
 
-[**Lecture 1**](unit_2/lectures/lecture_1.pdf): Combinations & Permutations, Multidimensional Sample Spaces, Random Variables, Joints, Marginals, Conditionals
+[**Lecture 1**](unit_2/lectures/lecture_1.pdf): Combinations & Permutations, Multidimensional Sample Spaces, Random Variables, Continuous Probability Distributions
 
-[**Lecture 2**](unit_2/lectures/lecture_2.pdf): Working with Joints/Marginals/Conditionals Example, Bayes' Theorem, Independence, Compound Conditionals, Conditional Independence, Table of Useful Equations
+[**Lecture 2**](unit_2/lectures/lecture_2.pdf): Marginals, Joints, Conditionals, Working with Joints/Marginals/Conditionals, Bayes' Theorem, Independence, Compound Conditionals, Conditional Independence, Table of Useful Equations
 
 #### [Unit 3](unit_3) &mdash; Python Basics
 
 [**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_3/lectures/lecture_1.ipynb):  Python Variables, String Formatting, Representing Integers
 
-[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_3/lectures/lecture_2.ipynb): Floating Point Representation, Python Booleans, Default Booleans, Floating Point Booleans, Lists, Slicing, Range, For loops, Numpy Arrays, Basic Plotting
+[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_3/lectures/lecture_2.ipynb): Floating Point Representation, Python Booleans, Default Booleans, Floating Point Booleans
 
-#### [Unit 4](unit_3) &mdash; Jupyter Basics & Probability Distributions 
+#### [Unit 4](unit_4) &mdash; Python Basics, Expected Value
 
-[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_4/lectures/lecture_1.ipynb): Python Data Types (dictionaries, tuples, ints, floats), Function Arguments, Jupter Notebook Format, IPython Magic, Updating/Installing New Packages, Exporting Notebooks, Notebook Extensions, Python Tutor in Notebooks,
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_4/lectures/lecture_1.ipynb): Lists, Slicing, Range, For loops, Numpy Arrays, Python Tutor, Python Data Types (dictionaries, tuples, ints, floats), Function Arguments, Basic Plotting, Jupter Notebook Format
 
-[**Lecture 2**](unit_4/lectures/lecture_2.pdf): Expected Values and Variance
+[**Lecture 2**](unit_4/lectures/lecture_2.pdf): Expected Values and Variance, Conditional Expectation
 
-#### [Unit 5](unit_5) &mdash; Working with Probability Distributions
+#### [Unit 5](unit_5) &mdash; Probability Distributions
 
-[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_5/lectures/lecture_1.ipynb): Break Statement, While Loops, Discrete Distribution Prediction Intervals, Defining Functions, Named Arguments, Default Function Arguments, Documenting Functions, Scipy Stats, Sampling from Discrtete Distributions, Histogramming,
+[**Lecture 1**](unit_5/lectures/lecture_1.pdf): Bernoulli, Geometric, Binomial, Poisson, Exponential and Normal Distribution Equations
 
-[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_5/lectures/lecture_2.ipynb): Normal Distribution, Cumulative Distribution Functions, Intervals on Normal Distribution, Standard Normal Distribution (Z-Values), Visualizing the Normal Distribution, Sampling from a Model, Defining Numpy Functions
+[**Lecture 2**](unit_5/lectures/lecture_2.pdf): Probability of a Sample or Interval, Prediction Interval
 
 
-#### [Unit 6](unit_6) &mdash; Working with Data & the t-Distribution
+#### [Unit 6](unit_6) &mdash; Python Program Flow
+
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_6/lectures/lecture_1.ipynb): Plotting - Basics, LaTeX, Point Markers, Vertical/Horizontal Lines, Legends
+
+[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_6/lectures/lecture_2.ipynb): Break Statement, While Loops, Discrete Distribution Prediction Intervals, Defining Functions, Named Arguments, Default Function Arguments, Documenting Functions, Scipy Stats, Working with Probability and Prediction Intervals of Normal Distribution
+
+
+Topics - Projected
+---
+
+#### [Unit ?](unit_6) &mdash; Working with Data & the t-Distribution
 
 [**Lecture 1**](unit_6/lectures/lecture_1.pdf): Sample Mean, Sample Variance, Sample Covariance, Sample Correlation, Median, Mode
 
