@@ -179,7 +179,10 @@ The formula is for sample covariance with your $N$ paired data is:
 \end{equation}
 
 Following this notation, sometimes people write sample variance as
-$\sigma_{xx}$ instead of $\sigma_x^2$.
+$\sigma_{xx}$ instead of $\sigma_x^2$. The reason that $N - 1$ is not
+$N - 2$ is that $N$ is the number of {\it pairs} of data points. That
+means that we only remove one degree of freedom when we calculate the
+mean of $x$ and $y$.
 
 \subsection{Covariance Matrix}
 
