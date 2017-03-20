@@ -60,6 +60,20 @@ Topics
 [**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_6/lectures/lecture_2.ipynb): Break Statement, While Loops, Discrete Distribution Prediction Intervals, Defining Functions, Named Arguments, Default Function Arguments, Documenting Functions, Scipy Stats, Working with Probability and Prediction Intervals of Normal Distribution
 
 
+#### [Unit 7](unit_7) &mdash; Functions and Sample Statistics
+
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_7/lectures/lecture_1.ipynb): Defining functions in Python
+
+[**Lecture 2**](unit_7/lecture_2.pdf): Sample Statisics (median, mean, mode, correlation, sample covariance) and Covariance of Random Variables
+
+[**Lecture 3**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_7/lectures/lecture_3.ipynb): Histograms, Sampling Random Variables, Calculating Sample Statistics in Python
+
+#### [Unit 8](unit_8) &mdash; Central Limit Theorem and Confidence Intervals
+
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_8/lectures/lecture_1.ipynb): Central Limit Theorem and Theory of Confidence Intervals
+
+[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_8/lectures/lecture_2.ipynb): Computing Confidence Intervals
+
 Topics - Projected
 ---
 
