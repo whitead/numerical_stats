@@ -20,6 +20,11 @@ probability theory, the central limit theorem, hypothesis testing,
 confidence intervals, regression, model fitting and basic error
 analysis.
 
+Projects
+----
+
+See [project](project/) folder.
+
 Topics
 ----
 
