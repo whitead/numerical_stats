@@ -74,6 +74,13 @@ Topics
 
 [**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_8/lectures/lecture_2.ipynb): Computing Confidence Intervals
 
+#### [Unit 10](unit_10) &mdash; Linear Algebra in Python
+
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_10/lectures/lecture_1.ipynb): Matrix Algebra (`linalg`), Solving Systems of Equations, Eigenvector/Eigenvalue, Matrix Rank
+
+[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_10/lectures/lecture_2.ipynb): Numerical Differentiation, Numerical Integration via Trapezoidal Rule, Numerical Integration in Scipy, Anonymous Functions (`lambda`)
+
+
 Topics - Projected
 ---
 
