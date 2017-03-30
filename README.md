@@ -85,6 +85,12 @@ Topics
 
 [**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_9/lectures/lecture_2.ipynb): Numerical Differentiation, Numerical Integration via Trapezoidal Rule, Numerical Integration in Scipy, Anonymous Functions (`lambda`)
 
+#### [Unit 10](unit_10): &mdash;  Hypothesis Testing
+
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_10/lectures/lecture_1.ipynb): Introduction to Hypothesis Testing, the zM and Student's t-Test
+
+[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_10/lectures/lecture_2.ipynb): Non-Parametric Statistics, Wilcoxon Sum of Ranks, Wilcoxon Signed Rank, Poisson Test, Binomial Test
+
 
 Topics - Projected
 ---
@@ -108,12 +114,6 @@ Topics - Projected
 [**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_8/lectures/lecture_1.ipynb): Common mistakes with functions, Scope, Root Finding in 1D, Minimization in 1D, Convexity
 
 [**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_8/lectures/lecture_2.ipynb): Root finding in multiple dimensions, Minimization in multiple dimensions, Bounded Optimization, Non-convex Optimization
-
-#### [Unit 9](unit_9): &mdash;  Hypothesis Testing
-
-[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_9/lectures/lecture_1.ipynb): Introduction to Hypothesis Testing, the zM and Student's t-Test
-
-[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_9/lectures/lecture_2.ipynb): Non-Parametric Statistics, Wilcoxon Sum of Ranks, Wilcoxon Signed Rank, Poisson Test
 
 #### [Unit 10](unit_10): &mdash; MATLAB and Excel
 
