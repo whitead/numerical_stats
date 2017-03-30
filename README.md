@@ -92,6 +92,13 @@ Topics
 [**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_10/lectures/lecture_2.ipynb): Non-Parametric Statistics, Wilcoxon Sum of Ranks, Wilcoxon Signed Rank, Poisson Test, Binomial Test
 
 
+#### [Unit 11](unit_8) &mdash; Optimization
+
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_11/lectures/lecture_1.ipynb): Common mistakes with functions, Scope, Root Finding in 1D, Minimization in 1D, Convexity
+
+[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_11/lectures/lecture_2.ipynb): Root finding in multiple dimensions, Minimization in multiple dimensions, Bounded Optimization, Non-convex Optimization
+
+
 Topics - Projected
 ---
 
@@ -109,11 +116,6 @@ Topics - Projected
 
 [**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_7/lectures/lecture_2.ipynb): Numerical Differentiation, Numerical Integration via Trapezoidal Rule, Numerical Integration in Scipy, Anonymous Functions (`lambda`), Debugging Functions
 
-#### [Unit 8](unit_8) &mdash; Optimization
-
-[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_8/lectures/lecture_1.ipynb): Common mistakes with functions, Scope, Root Finding in 1D, Minimization in 1D, Convexity
-
-[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_8/lectures/lecture_2.ipynb): Root finding in multiple dimensions, Minimization in multiple dimensions, Bounded Optimization, Non-convex Optimization
 
 #### [Unit 10](unit_10): &mdash; MATLAB and Excel
 
