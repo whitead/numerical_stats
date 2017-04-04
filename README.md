@@ -89,10 +89,10 @@ Topics
 
 [**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_10/lectures/lecture_1.ipynb): Introduction to Hypothesis Testing, the zM and Student's t-Test
 
-[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_10/lectures/lecture_2.ipynb): Non-Parametric Statistics, Wilcoxon Sum of Ranks, Wilcoxon Signed Rank, Poisson Test, Binomial Test
+[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_10/lectures/lecture_2.ipynb): Non-Parametric Statistics, Reading a CSV file in Pandas, Wilcoxon Sum of Ranks, Wilcoxon Signed Rank, Poisson Test, Binomial Test
 
 
-#### [Unit 11](unit_8) &mdash; Optimization
+#### [Unit 11](unit_11) &mdash; Optimization
 
 [**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_11/lectures/lecture_1.ipynb): Common mistakes with functions, Scope, Root Finding in 1D, Minimization in 1D, Convexity
 
