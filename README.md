@@ -98,21 +98,23 @@ Topics
 
 [**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_11/lectures/lecture_2.ipynb): Root finding in multiple dimensions, Minimization in multiple dimensions, Bounded Optimization, Non-convex Optimization
 
+#### [Unit 12](unit_12): &mdash; Regression
+
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_12/lectures/lecture_1.ipynb): Shapiro-Wilk Normality Test, Ordinary Least-Squares Linear Regression in 1- (OLS-1D) and N dimensions (OLS-ND), Standard error, Uncertainty in OLS-1D, OLS-ND, Fit coefficient hypothesis tests, Fit coefficient confidence intervals, Overview of steps to justify and perform regression (bottom of lecture)
+
+[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_12/lectures/lecture_2.ipynb): Non-linear regression and error analysis. Deconvoluting spectrum example.
+
+[**Lecture 3**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_12/lectures/lecture_3.ipynb): Regressing categorical data with discrete domains
+
+[**Lecture 4**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_12/lectures/lecture_4.ipynb): Regressing with constant uncertainty/measurement error in independent and/or dependent variables
+
+#### [Unit 13](unit_13): &mdash; Applied Python - Working with Data
 
 Projected Topics
 ---
 
 **Links below here are not updated yet**
 
-#### [Unit 12](unit_12): &mdash; Regression
-
-[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_11/lectures/lecture_1.ipynb): Shapiro-Wilk Normality Test, Ordinary Least-Squares Linear Regression in 1- (OLS-1D) and N dimensions (OLS-ND), Standard error, Uncertainty in OLS-1D, OLS-ND, Fit coefficient hypothesis tests, Fit coefficient confidence intervals, Overview of steps to justify and perform regression (bottom of lecture)
-
-[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_11/lectures/lecture_2.ipynb): Non-linear regression and error analysis. Deconvoluting spectrum example.
-
-[**Lecture 3**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_11/lectures/lecture_3.ipynb): Regressing categorical data with discrete domains
-
-[**Lecture 4**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_11/lectures/lecture_4.ipynb): Regressing with constant uncertainty/measurement error in independent and/or dependent variables
 
 #### [Unit 13](unit_13): &mdash; Applied Python - Working with Data
 
