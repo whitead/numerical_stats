@@ -116,7 +116,9 @@ Topics
 
 #### [Unit 14](unit_14): &mdash; Applied Python - Working with Data
 
-[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_14/lectures/lecture_2.ipynb): Dealing with duplicate, missing, NaN, non-contiguous, out of order data, Joining datasets, Using Pandas, Using Seaborn, Computing Running Means
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_14/lectures/lecture_1.ipynb): Dealing with duplicate, missing, NaN, non-contiguous, out of order data, Joining datasets, Using Pandas, Using Seaborn, Computing Running Means
+
+[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_14/lectures/lecture_2.ipynb): Packaging and deploying Python modules
 
 #### [Unit 15](unit_15): &mdash; What to do now
 
