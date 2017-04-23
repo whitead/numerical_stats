@@ -108,49 +108,34 @@ Topics
 
 [**Lecture 4**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_12/lectures/lecture_4.ipynb): Regressing with constant uncertainty/measurement error in independent and/or dependent variables
 
-#### [Unit 13](unit_13): &mdash; Applied Python - Working with Data
-
-Projected Topics
----
-
-**Links below here are not updated yet**
-
-
-#### [Unit 13](unit_13): &mdash; Applied Python - Working with Data
-
-[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_13/lectures/lecture_1.ipynb): Dealing with duplicate, missing, NaN, non-contiguous, out of order data, Joining datasets, Using Pandas, Using Seaborn, Computing Running Means
-
 #### [Unit 13](unit_13): &mdash; Differential Equations & Uncertainty Propagation
 
-[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_12/lectures/lecture_1.ipynb): Standard form and categorizing differential equations, Solving ODEs
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_13/lectures/lecture_1.ipynb): Standard form and categorizing differential equations, Solving ODEs
 
-[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_12/lectures/lecture_2.ipynb): Error propagation through numerical derivatives, statistical fallacies
+[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_13/lectures/lecture_2.ipynb): Error propagation through numerical derivatives, statistical fallacies
+
+#### [Unit 14](unit_14): &mdash; Applied Python - Working with Data
+
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_14/lectures/lecture_2.ipynb): Dealing with duplicate, missing, NaN, non-contiguous, out of order data, Joining datasets, Using Pandas, Using Seaborn, Computing Running Means
 
 #### [Unit 15](unit_15): &mdash; What to do now
 
 [**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_15/lectures/lecture_1.ipynb): Next steps to learn more about numerical methods, statistics, and programming
 
-Topics not covered
+Extra Topics
 -----
 
 
-#### [Unit 10](unit_10): &mdash; MATLAB and Excel
+#### [Unit 16](unit_16): &mdash; MATLAB
 
-[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_10/lectures/lecture_1.ipynb): An overview of MATLAB, the Jupyter Hub server and Excel
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_16/lectures/lecture_1.ipynb): An overview of MATLAB, the Jupyter Hub server and Excel
 
-[**Lecture Review**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_11/lectures/lecture_review.ipynb): Examples and overview of the regression unit
+#### [Unit 17](unit_17): &mdash; User Interfaces
 
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_17/lectures/lecture_1.ipynb): Creating and writing animations
 
-#### [Unit 13](unit_13): &mdash; Applied Python - Working with Data and Creating Modules 
+[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_17/lectures/lecture_2.ipynb): Introduction to HTML, CSS, JS and modifying notebook style
 
-[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_13/lectures/lecture_2.ipynb): Packaging and documenting python functions in a module
-
-#### [Unit 14](unit_14): &mdash; User Interfaces
-
-[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_14/lectures/lecture_1.ipynb): Creating and writing animations
-
-[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_14/lectures/lecture_2.ipynb): Introduction to HTML, CSS, JS and modifying notebook style
-
-#### [Unit ?](?): &mdash; Sampling and Likelihood Modeling
+#### [Unit 18](unit_18): &mdash; Sampling and Likelihood Modeling
 
 
