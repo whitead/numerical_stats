@@ -69,7 +69,7 @@ Topics
 
 [**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_7/lectures/lecture_1.ipynb): Defining functions in Python
 
-[**Lecture 2**](unit_7/lecture_2.pdf): Sample Statisics (median, mean, mode, correlation, sample covariance) and Covariance of Random Variables
+[**Lecture 2**](unit_7/lectures/lecture_2.pdf): Sample Statisics (median, mean, mode, correlation, sample covariance) and Covariance of Random Variables
 
 [**Lecture 3**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_7/lectures/lecture_3.ipynb): Histograms, Sampling Random Variables, Calculating Sample Statistics in Python
 
