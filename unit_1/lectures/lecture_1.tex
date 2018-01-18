@@ -1,10 +1,24 @@
 \documentclass{article}
 
 \usepackage{teaching, array, hyperref}
+\usepackage{lastpage,fancyhdr}
+\pagestyle{fancy}
+\fancyhf{}
+\renewcommand{\headrulewidth}{0.0pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\cfoot{Lecture 1.1 \-- \thepage{} of \pageref*{LastPage}}
+
 
 \begin{document}
 
-\begin{tdoc}{CHEM 116}{Unit 1, Lecture 1}{Numerical Methods and Statistics} 
+\begin{tdoc}{CHEM 116}{Unit 1, Lecture 1}{Numerical Methods and Statistics}
+
+\subsection*{Companion Reading}
+
+\begin{itemize}
+  \item Bulmer, Pages 12-25
+  \item Langley, Pages 11-27
+\end{itemize}
 
 \section{Course Structure}
 
@@ -28,6 +42,8 @@ world problems require computers. This course will equip you for that.
 \item[Practical Statistics Explained]{A practical handbook concerned with the application of statistics}
 
 \item[Code Academy]{A simple introduction to python: \href{https://www.codecademy.com/learn/python}{www.codecademy.com/learn/python}}
+
+\item[Hacker Rank]{Progressively difficult Python exercises: \href{https://www.hackerrank.com}{hackerrank.com}}
 
 \item[Python in Easy Steps]{Accessible book covering Python basics. Bright colors, friendly cartoons that talk to you in the margins.}
 
@@ -54,7 +70,7 @@ See syllabus
 
 \subsection{Projects}
 
-Will be discussed more in the future. 
+The goal of the projects are for you to demonstrate that you know how to apply numerical methods and statistics on open-ended problems. Your project should be on something interesting to you and your target audience should be someone who knows little about statistics or numerical methods. You should be demonstrating how numerical methods and statistics can solve complex problems.
 
 \subsection{Python}
 
@@ -68,6 +84,10 @@ Will be discussed more in the future.
 \item Programs will be easy distribute, easy to install, easy to view by people with no programming experience
 
 \end{enumerate}
+
+\renewcommand{\headrulewidth}{0.4pt}
+\lhead{CHE 116}
+\rhead{Lecture 1.1}
 
 \section{Probability Theory}
 
@@ -100,7 +120,7 @@ sample space is $1$. That condition is called normalization.
 
 Notice that even if $\sum_{X} P(x) > 1$, as long as it's finite we can
 \emph{normalize} the probability by dividing it by a constant such
-that its sum is $1$. Example: 
+that its sum is $1$. Example:
 \begin{equation}
 P(\textrm{die roll}) = \textrm{value of die}
 \end{equation}
@@ -209,7 +229,7 @@ example, a combination of 1,2,3 is the sum of the probabilities of
 each possible permutation of rolling a 1,2,3:
 \begin{enumerate}
 \item $P(\textrm{perm}: 1,2,3) = P(1)\cdot P(2) \cdot P(3) = \frac{1}{6^3}$
-\item $P(\textrm{perm}: 1,3,2) = P(1)\cdot P(2) \cdot P(3) = \frac{1}{6^3}$  
+\item $P(\textrm{perm}: 1,3,2) = P(1)\cdot P(2) \cdot P(3) = \frac{1}{6^3}$
 \item $P(\textrm{perm}: 2,3,1) = P(1)\cdot P(2) \cdot P(3) = \frac{1}{6^3}$
 \item $P(\textrm{perm}: 2,1,3) = P(1)\cdot P(2) \cdot P(3) = \frac{1}{6^3}$
 \item $P(\textrm{perm}: 3,1,2) = P(1)\cdot P(2) \cdot P(3) = \frac{1}{6^3}$
@@ -218,7 +238,7 @@ each possible permutation of rolling a 1,2,3:
 So the probability of the combination of 1,2,3 is
 $\frac{6}{6^3}$.
 
-\subsection{Uniform Probability Sample Spaces} 
+\subsection{Uniform Probability Sample Spaces}
 
 If all samples have equal probabilities probabilities, the probability of a
 sample is
@@ -237,7 +257,7 @@ in the event, $q$, divided by the size of the sample space, $|Q|$:
 P(\textrm{event}) = \frac{q}{|Q|}
 \end{equation}
 
-For example, the probability of rolling an odd number is $3 / 6$. 
+For example, the probability of rolling an odd number is $3 / 6$.
 
 
 The probability of a \emph{combination} occurring is then the number of
@@ -277,7 +297,7 @@ independent.\vspace{0.2cm}\\
 finite everywhere, it can be normalized.
 
 \item[Combination vs Permutation]: A permutation is a particular
-  ordering of a combination. 
+  ordering of a combination.
 
 \item[Event vs. Observation]: I've used observation here to indicate
   the generation of a sample (outcome). The generation of the sample
