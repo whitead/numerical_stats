@@ -215,7 +215,12 @@ and $B$.
 
 \subsection{Independent samples and combination vs permutation}
 
-When sampling multiple independent trials/events/samples, the {\bf
+\begin{description}
+  \item{Permutation} A particular sequence of elements of a sample space (e.g., the alphabet: ABDEFGH...).  \textbf{Order matters}
+  \item{Combination} A collection of elements of a sample space. \textbf{Order does not matter}
+\end{description}
+
+When sampling multiple independent observations, or samples, the {\bf
   AND} rule applies to permutations. A {\bf combination} of events
 have no ordering - order does not matter. A particular sequence from
 those events is called a {\bf permutation} - order
@@ -279,11 +284,11 @@ P(\textrm{combination}) = n P(\textrm{permutation})
 See the above permutation example to see this. Notice this is about multiple observations, whereas the previous two equations are about single observations. For example, consider the probability of rolling an even number and an odd number with a die within two rolls:
 
 \begin{equation}
-P(\textrm{permutation} = P(\textrm{even event}) \times P(\textrm{odd event})
+P(\textrm{permutation}) = P(\textrm{even event}) \times P(\textrm{odd event})
 \end{equation}
 
 \begin{equation}
-P(\textrm{permutation} = \frac{3}{6} \times \frac{3}{6} = \frac{1}{4}
+P(\textrm{permutation}) = \frac{3}{6} \times \frac{3}{6} = \frac{1}{4}
 \end{equation}
 
 The number of permutations for rolling an odd and even number within two rolls is two: even then odd or odd then even.

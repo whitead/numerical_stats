@@ -6,21 +6,25 @@
 
 \begin{document}
 
-\begin{tdoc}{CHEM 116}{Unit 2, Lecture 1}{Numerical Methods and Statistics} 
+\begin{tdoc}{CHEM 116}{Unit 2, Lecture 1}{Numerical Methods and Statistics}
+
+  \subsection*{Companion Reading}
+  \textbf{None}
+
 
   \section{Probability II}
 
   \subsection{Combinations and Permutations}
 
-  We'll take a quick detour and learn about counting, or combinatorial math. 
+  We'll take a quick detour and learn about counting, or combinatorial math.
 
   {\bf If you have $n$ objects and are making samples of length $l$, there are $n^l$ permutations}
 
   This one is quite simple. Think about a number. You know the number
   of digits places and 0-9 can go in each. So $l$ is the number of
   digits places and $n$ is the number of possible numbers. For example, there
-  are $10^4$ possible 4 digit numbers (0000-9999), as expected. 
-  
+  are $10^4$ possible 4 digit numbers (0000-9999), as expected.
+
   {\bf  If you have $n$ items and it happens that you're making samples of length $n$, the number of permutations is $n!$. }
 
   Consider the three letters in the word `cat'. You can rearrange this many ways:
@@ -31,7 +35,7 @@
   \item tac
   \item tca
   \item atc
-  \item act        
+  \item act
   \end{enumerate}
 
   See the pattern of three possibilities for the first letter. Then,
@@ -46,7 +50,7 @@
   $n$ and counts down until we've exhausted $l$. For example, if we
   have the letters A, B, C, D and E and are making all 3-letter
   combinations, we have: $5 \times 4 \times 3$. That's what the
-  equation above is. 
+  equation above is.
 
   {\bf if you have $n$ items and are making samples of length $l$, but you disallow repeats of the $n$ items you have this many combinations:}
 
@@ -73,18 +77,18 @@
 
   What's the sample space size for a draw of 5 cards?\\
   $$\frac{52!}{5!(52 - 5)!} = 2,598,960$$
-  
-  
+
+
 \subsection{Multidimensional Sample Spaces}
 
 Nearly all examples in class thus far used sample spaces that have a single
 dimension. Sample spaces can be pairs of values in a 2D space or
-higher. 
+higher.
 
 \begin{itemize}
 \item the sample space could be the roll of two dice
 \item The sample space could be GPS coordinates
-\end{itemize} 
+\end{itemize}
 
 Sample spaces can be joined together into {\bf product spaces},
 indicated as $Q_1 \otimes Q_2$. A product space is every possible
@@ -194,7 +198,7 @@ the pseudo-derivative of a probability mass function. It's used like so:
 \Pr(2.549 < x < 2.501) = \int_{2.549}^{2.501} p(x)\,dx
 \]
 Notice an integral is used to treat intervals and the PDF ($p(x)$) is
-indicated with a lower-case. 
+indicated with a lower-case.
 
 {\bf We will never deal with single points in continuous rv and you
   should always be thinking in terms of intervals over the PDF
