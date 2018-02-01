@@ -78,6 +78,73 @@
   What's the sample space size for a draw of 5 cards?\\
   $$\frac{52!}{5!(52 - 5)!} = 2,598,960$$
 
+\subsection{Repeated Items in Permutations}
+
+What happens when one of our $n$ items has a repeat? For example, consider rearranging
+the letters in the word `DAD':
+
+\begin{enumerate}
+\item DAD
+\item DDA
+\item ADD
+\end{enumerate}
+
+However, our previous rule tells us that there should be $3! = 6$ permutations. The reason why is that we `lose' some permutations because
+the two $D$s are interchangeble. For each of the words we could swap the two Ds and keep the same word. Thus for each two permutations according
+to our original rule, there is actually only one unique permutations:  $$ \frac{3!}{2} = 3$$
+
+Let's now look at three repeated items: `ABBB':
+\begin{enumerate}
+\item ABBB
+\item BABB
+\item BBAB
+\item BBBA
+\end{enumerate}
+
+We see 4 permutations and our rule says $4!=24$. To see what's happening, consider one of our unique permutations but label the letters:
+\begin{itemize}
+\item AB$_1$B$_2$B$_3$
+\item AB$_1$B$_2$B$_3$
+\item AB$_3$B$_2$B$_1$
+\item ...
+\end{itemize}
+Thus for each of our unique permutations, there are $3!$ ways to rearrange but keep the same permutation. Put another way, of the 24 rearrangements,
+we over-count by $3!$.
+
+Following similar logic you can see that if we have multiple repeated items, the product of their repeats shows up in the denominator. For example, if you have `ABBBDDCE', the number of permutations is:
+\[
+\frac{8!}{3!\times2!} = 3360  
+\]
+
+Symbolically this is:
+\begin{equation}
+  \frac{n!}{\prod_i k_i!}
+\end{equation}
+
+\subsection{Multiple Combinations}
+Consider if we don't specify $l$ for combinations. For example, say you have $n$ items and you can make all combinations from $l=0$ through $l=n$. To analyze this, we can just sum our rules for each $l$:
+
+\[
+  \sum_{l=0}^n \frac{n!}{l!(n - l)!}  
+\]
+This expression can be simplified:
+\begin{equation}
+  \sum_{l=0}^n \frac{n!}{l!(n - l)!} = 2^n
+\end{equation}
+
+This can be thought of as the number of subsets you can make. Subsets, like we saw for events, are sets of sets. For example if you have a set consisting of $\{3, 5, 2\}$, the possible subsets are:
+\begin{enumerate}
+\item $l=0$, $\{\}$
+\item $l=1$, $\{3\}$
+\item $l=1$, $\{5\}$
+\item $l=1$, $\{2\}$
+\item $l=2$, $\{2, 3\}$
+\item $l=2$, $\{2,5\}$
+\item $l=2$, $\{3,5\}$
+\item $l=3$, $\{2, 3, 5\}$
+\end{enumerate}
+
+So there are $2^3 = 8$ combinations, including the `empty' combination. Notice that when $n = l$, there is one combination. Don't get confused: when $n = l$ there is 1 combination and $n!$ permutations.
 
 \subsection{Multidimensional Sample Spaces}
 
