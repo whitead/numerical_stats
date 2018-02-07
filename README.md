@@ -43,11 +43,11 @@ Topics
 
 [**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_3/lectures/lecture_1.ipynb):  Python Variables, String Formatting, Representing Integers
 
-[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_3/lectures/lecture_2.ipynb): Floating Point Representation, Python Booleans, Default Booleans, Floating Point Booleans
+[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_3/lectures/lecture_2.ipynb): Floating Point Representation, Python Booleans, Default Booleans, Floating Point Booleans, Lists, Slicing
 
 #### [Unit 4](unit_4) &mdash; Python Basics, Expected Value
 
-[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_4/lectures/lecture_1.ipynb): Lists, Slicing, Range, For loops, Numpy Arrays, Python Tutor, Python Data Types (dictionaries, tuples, ints, floats), Function Arguments, Basic Plotting, Jupter Notebook Format
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_4/lectures/lecture_1.ipynb): List Methods, Range, Numpy Arrays, Python Tutor, For loops, Python Data Types (dictionaries, tuples, ints, floats), Function Arguments, Basic Plotting, Jupter Notebook Format
 
 [**Lecture 2**](unit_4/lectures/lecture_2.pdf): Expected Values and Variance, Conditional Expectation
 
