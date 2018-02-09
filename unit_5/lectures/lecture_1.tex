@@ -6,13 +6,16 @@
 
 \begin{tdoc}{CHEM 116}{Unit 5, Lecture 1}{Numerical Methods and Statistics}
 
+  \subsection*{Companion Reading}
+  \textbf{Bulmer} Chapter 6
+
 \section{Distributions}
 
 Some random variables/sample spaces are so common, we have a name and
 equations that describe them. For example, consider the simplest
 probability mass function/distribution:
 
-\subsection{Bernoulli Distribution} 
+\subsection{Bernoulli Distribution}
 
 The Bernoulli distribution has a sample space of size 2 (e.g., 0, 1) with probability:
 \begin{equation}
@@ -20,7 +23,7 @@ The Bernoulli distribution has a sample space of size 2 (e.g., 0, 1) with probab
 \end{equation}
 The expected value is $p$ and the variance is $p(1-p)$. An example of
 a process that follows a Bernoulli distribution is flipping a coin
-once. Typically 1 is denoted as success and 0 as failure. 
+once. Typically 1 is denoted as success and 0 as failure.
 
 There are three important things to recall about a distribution: its
 {\bf sample space type} (continuous/discrete), its {\bf support} or
@@ -46,7 +49,7 @@ $[1,\infty)$. It is the number of trials required until
 \Pr(X = n) = (1 - p)^{n - 1}p
 \end{equation}
 
-The expected value is $1 / p$ and the variance is: 
+The expected value is $1 / p$ and the variance is:
 \begin{equation}
 \frac{1 - p}{p^2}
 \end{equation}
@@ -79,7 +82,7 @@ Binomial, since it can vary from 0 to 5 (6 possibilities).
 \subsection{Poisson Distribution}
 A Poisson distribution is discrete and has a sample space of
 $[0,\infty)$. It can be thought of an approximation to the Binomial
-  distribution in the case of very low chances of success ($p << 0.5$), 
+  distribution in the case of very low chances of success ($p << 0.5$),
   where $\mu = Np$. Its equation is
 \begin{equation}
 \Pr(X = x) = \frac{e^{-\mu}{\mu^x}}{x!}
@@ -120,10 +123,10 @@ of $(-\infty, \infty)$. We will see why later in the semester, but a
 normal distribution is almost always a good guess for the
 description of a process if it is continuous. Its equation is:
 
-\begin{equation}    
+\begin{equation}
   \Pr(X = x) = \frac{1}{\sigma\sqrt{2\pi}}e^{\frac{-(x - \mu)^2}{2\sigma ^2}}
 \end{equation}
-  
+
 \end{tdoc}
 
 \end{document}

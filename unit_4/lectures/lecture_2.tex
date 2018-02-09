@@ -6,6 +6,10 @@
 
 \begin{tdoc}{CHEM 116}{Unit 4, Lecture 2}{Numerical Methods and Statistics}
 
+
+    \subsection*{Companion Reading}
+    \textbf{Bulmer} Chapter 5
+
 \section{Expected Values}
 
 The expected value of a samlpe $x$ is
@@ -23,13 +27,13 @@ maximizes $P(x)$, written as:
 \argmax_x P(x)
 \end{equation}
 
-Think of an expected value as a measure of the center point of the sample space. 
+Think of an expected value as a measure of the center point of the sample space.
 
 \subsection{Die Roll Example}
 
 Consider a fair die example, where $d$ is an element in our sample
 space. Our sample space is one through and the probability of a sample
-occuring is $1/6$. 
+occuring is $1/6$.
 
 \[
 \pexp{D} = \frac{1}{6}\times{}1 + \frac{1}{6}\times{}2 + \frac{1}{6}\times{}3 \ldots
@@ -127,16 +131,16 @@ P(S = s) = \frac{6 - |s - 7|}{36}
 Finally, we are ready to utilize the expected value equation:
 
 \[
-\pexp{S} = \sum_\mathcal{Q} P(S=s)s = \sum_{2,\ldots,12} \frac{6 - |s - 7|}{36}\times s 
+\pexp{S} = \sum_\mathcal{Q} P(S=s)s = \sum_{2,\ldots,12} \frac{6 - |s - 7|}{36}\times s
 \]
 \[
-= \frac{1 \times 2}{36} + \frac{2 \times 3}{36} + \frac{3 \times 4}{36} + \ldots + \frac{1 \times 12}{36} 
+= \frac{1 \times 2}{36} + \frac{2 \times 3}{36} + \frac{3 \times 4}{36} + \ldots + \frac{1 \times 12}{36}
 \]
 \[
 = \frac{252}{36} = 7
 \]
 
-Thus we've arrived at the same answer. 
+Thus we've arrived at the same answer.
 
 \subsection{Continuous Expected Value}
 
@@ -192,7 +196,7 @@ We already know $\pexp{X} = 21/6 =  3.5$. To find $\pexp{D^2}$, we can use our
 random variable expectation equation. Take $F$ to be our random
 variable deinfed by $F(x) = x^2$:
 \[
-\pexp{D^2} = \pexp{F} = \sum_Q P(x)x^2 = 
+\pexp{D^2} = \pexp{F} = \sum_Q P(x)x^2 =
 \]
 \[
 = \frac{1}{6}\times{}1^2 + \frac{1}{6}\times{}2^2 + \frac{1}{6}\times{}3^2 \ldots
