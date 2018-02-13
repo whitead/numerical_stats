@@ -1,0 +1,33 @@
+\documentclass{article}
+
+\usepackage{teaching, array}
+
+\begin{document}
+
+\begin{tdoc}{CHEM 116}{Unit 2, Extra Notes}{Numerical Methods and Statistics}
+
+  \emph{The purpose of this document is to show you how English
+    sentences represent probability equations}
+
+  Consider the probability distribution
+  \begin{equation}
+    \Pr(X=x, Y=y, Z=z)
+  \end{equation}
+
+  with no assumptions of independence, the following is true
+
+  \vspace{0.5cm}
+
+  \begin{tabular}{lr}
+    Sentence & Equation\\
+    \hline\\
+    What is the probability of $X=2$, $Y=2$, and $Z=0$? & $\Pr(X=2, Y=2, Z=0)$\\
+    What is the probability of $X=1$, $Y=5$? & $\Pr(X=1, Y=2) = \sum_z\Pr(X=1, Y=2, Z=z)$\\
+    If $Z=4$, what is the probability of $X=2$, $Y=4$? & $\Pcond{X=2, Y=4}{Z=4}$\\
+    What is the probability of $X=2$, $Y=4$, given $Z$ is 4? & $\Pcond{X=2, Y=4}{Z=4}$\\
+    If $Y=2$ and $Z = 0$, what is the probability of $X$? & $\Pcond{X=x}{Y=2, Z=0}$\\
+  \end{tabular}
+
+
+\end{tdoc}
+\end{document}
