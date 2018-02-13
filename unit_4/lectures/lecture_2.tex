@@ -109,13 +109,13 @@ together. That turns out to be 252. So we have:
 
 Another way to solve this problem is to DEFINE our sample space to be
 the possible sums. Then $Q = \{2, 3, \ldots, 12\}$. Our correponding
-probability is going to be the number of combinations to roll the sum
+probability is going to be the number of permutations to roll the sum
 divided by some normalizing constant. For example, the probability of
 rolling a 6 is 5 / Z, where $Z$ is some constant to make sure our
 probabilities sum to 1. The 5 comes from the number of ways to roll a
-6: $(1, 5), (2, 4), (3, 3), (4, 2), (5, 1)$. Now we to find $Z$:
+6: $(1, 5), (2, 4), (3, 3), (4, 2), (5, 1)$. I'm calling these permutations because $(1,5)$ and $(5,1)$ are both counted. Now we to find $Z$:
 \[
-Z = \underbrace{1}_{\textrm{combinations to roll a 2}} + \underbrace{2}_{\textrm{combinations to roll a 3}},\, \ldots\,, \underbrace{1}_{\textrm{combinations to roll a 12}}
+Z = \underbrace{1}_{\textrm{permutations to roll a 2}} + \underbrace{2}_{\textrm{permutations to roll a 3}},\, \ldots\,, \underbrace{1}_{\textrm{permutations to roll a 12}}
 \]
 \[
 Z = \underbrace{1}_2 + \underbrace{2}_3 + \underbrace{3}_4 + \underbrace{4}_5 + \underbrace{5}_6 + \underbrace{6}_7 + \underbrace{5}_8 + \underbrace{4}_9 + \underbrace{3}_{10} + \underbrace{2}_{11} + \underbrace{1}_{12} = 36
