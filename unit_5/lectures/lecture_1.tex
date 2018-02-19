@@ -100,12 +100,12 @@ support of $[0,\infty)$. It generally describes time between events,
   especially events whose occurrence follow the Poisson distribution
   (rare events). Its distribution is
 \begin{equation}
-\Pr(X = x) = \lambda e^{-\lambda x}
+p(x) = \lambda e^{-\lambda x}
 \end{equation}
 
 and the expected value is $ 1 / \lambda$. You may also think of it in
-terms of a residence time $\tau = 1 / \lambda$. The variance is
-$\lambda^{-2}$ or $\tau^2$. Note that we should imagine the process in
+terms of a residence time $\tau = 1 / \lambda$. Note that the equation is for its probability distribution functin (pdf) and not probability \textit{mass} function. This is indicated by the lower case $p$. The variance is
+$\lambda^{-2}$ or $\tau^2$. Note that we can more easily imagine the process in
 terms of its cumulative probability (see drawing) and not
 instantaneous pdf.
 
@@ -124,7 +124,7 @@ normal distribution is almost always a good guess for the
 description of a process if it is continuous. Its equation is:
 
 \begin{equation}
-  \Pr(X = x) = \frac{1}{\sigma\sqrt{2\pi}}e^{\frac{-(x - \mu)^2}{2\sigma ^2}}
+  p(x) = \frac{1}{\sigma\sqrt{2\pi}}e^{\frac{-(x - \mu)^2}{2\sigma ^2}}
 \end{equation}
 
 \end{tdoc}
