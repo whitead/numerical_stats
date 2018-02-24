@@ -69,9 +69,13 @@ Topics
 
 #### [Unit 7](unit_7) &mdash; Functions and Sample Statistics
 
-[**Lecture 1**](unit_7/lectures/lecture_1.pdf): Sample Statisics (median, mean, mode, correlation, sample covariance) and Covariance of Random Variables
+[**Lecture 1**](unit_7/lectures/lecture_1.pdf): Sample Statisics for 1D data: median, mean, mode, quartiles and quantiles.
 
-[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_7/lectures/lecture_2.ipynb): Histograms, Sampling Random Variables, Calculating Sample Statistics in Python
+[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_7/lectures/lecture_2.ipynb):  Presenting Results and Precision, Calculating Sample Statistics, Visualizing 1D data with histograms, Caclulating Sample Statistics with Categories, Visualizing Categorical 1D data with Boxplots and Violin Plots.
+
+[**Lecture 3**](unit_7/lectures/lecture_1.pdf): Sample Statisics for 2D data: Sample Covariance, Sample Correlation.
+
+[**Lecture 4**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_7/lectures/lecture_4.ipynb): Plotting 2D data (scatter plot) and computing sample covariance/correlation
 
 #### [Unit 8](unit_8) &mdash; Central Limit Theorem and Confidence Intervals
 
