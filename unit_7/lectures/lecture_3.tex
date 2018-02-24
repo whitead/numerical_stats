@@ -1,0 +1,155 @@
+
+\documentclass{article}
+
+\usepackage{teaching, array, amsmath}
+
+\DeclareMathOperator{\Prob}{P}
+\DeclareMathOperator{\Var}{Var}
+\DeclareMathOperator{\Cov}{Cov}
+\DeclareMathOperator{\Exp}{E}
+
+\begin{document}
+
+\begin{tdoc}{CHEM 116}{Unit 7, Lecture 3}{Numerical Methods and Statistics}
+
+  \subsection*{Companion Reading}
+  \textbf{Langley} Chapter 4
+
+
+\section{Descriptive Statistics of 2D Data}
+
+Now we will consider data with 2 dimensions. The underlying probability distributions that we assume describes this data now have 2 random variables. We'll return to probability theory to examine this situation and then use statistics to analyze 2D data.
+
+\section{Covariance}
+Covariance describes the relationship between two random variables
+changing. A positive covariance means the both move in the same
+direction. A negative covariance means they move in opposite
+directions. The magnitude of the covariance contains information about
+both the two random variables' variances and the relationship between
+the two. It's defined as:
+
+\begin{equation}
+  \Cov(X,Y) = \E\left[(X - \E[X])(Y - \E[Y])\right]
+\end{equation}
+
+\begin{equation}
+  \Cov(X,Y) = \E[XY] - \E[X]\E[Y]
+\end{equation}
+
+{\bf This is for working with random variables, not data!} We can use
+some math and such to come up with the following properties of covariance:
+
+\begin{enumerate}
+
+\item $\Cov(X,Y) = 0$, if $X$ and $Y$ are independent\\
+
+\item $\Cov(X,X) = \Var(x)$\\
+
+\item $\Cov(aX, bY) = ab\Cov(X,Y)$\\
+
+\item $\Cov(X + a, Y + b) = \Cov(X,Y)$\\
+
+\end{enumerate}
+
+\subsection{Example}
+
+Let's say the normal body temperature for a person follows a $\mu = 98.6 ^{\circ}$F and $\sigma=0.5 ^{\circ}$F normal distribution. A fever temperature is exactly $1.1\times T$ ,where $T$ is their body temperature. What's the covariance between fever and body temperature? We are saying that body temperature of a random person follows a random variable and fever is an analytic, deterministic function of body temperature. Now we're asking about their covariance.
+
+\[
+\Cov(F, T) = \Cov(1.1\times T, T) = 1.1\times \Cov(T, T) = 1. \Var(T)
+\]
+\[
+\Cov(F,T) = 1.1\times \sigma^2 = 0.55^\circ \textrm{F}
+\]
+
+After exercise, your temperature is $E = T + I$, where $I$ is an
+exponentially distributed random variable with $\lambda =0.25$. What's the covariance between body temperature and post-exercise body temperature? Notice that now we have two \textit{independent} random variables $I$ and $T$, and some summation of the two of them: $E$.
+
+\[
+\Cov(E, T) = \Cov(T + I, T) = \Cov(T, T) + \Cov(I, T) = \Var(T)
+\]
+
+\[
+\Cov(E, T) = 0.5^\circ \textrm{F}.
+\]
+
+\section{Sample Covariance}
+
+Just like sample variance and sample mean, there is a sample
+covariance. It is connected by the Law of Larger Numbers to covariance. To compute, sample covariance you must have $N$ sets of pairs of data to compute sample
+covariance. This is the first time we've been working in pairs by the
+way. \textit{The data muse be matched, meaning you are measuring two random
+variables in the same sample space}. It might be that your sample space
+is a product space; but there must be some pairing in the data.
+
+Examples of invalid `pairs':
+
+\begin{enumerate}
+
+\item How much it snowed today and the total snowfall of the week
+
+\item You have two groups. Group A gets a drug and group B gets a
+  placebo. You match each the people up in the group.
+
+\end{enumerate}
+
+Examples of valid `pairs':
+
+\begin{enumerate}
+
+  \item You have people try exercise for 5 weeks and then stop for 5
+    weeks. You take their weights after each 5 week period.
+
+    \item You measure a planet's diameter and brightness.
+
+\end{enumerate}
+
+
+The formula is for sample covariance with your $N$ paired data is:
+
+\begin{equation}
+  \sigma_{xy}= \frac{1}{N - 1} \sum_i^N (x - \bar{x})(y - \bar{y})
+\end{equation}
+
+Following this notation, sometimes people write sample variance as
+$\sigma_{xx}$ instead of $\sigma_x^2$. The reason that $N - 1$ is not
+$N - 2$ is that $N$ is the number of {\it pairs} of data points. That
+means that we only remove one degree of freedom when we calculate the
+mean of $x$ and $y$.
+
+\subsection{Covariance Matrix}
+
+You can write out all covariances/variances in a matrix like so:
+
+\[
+\left[\begin{array}{lr}
+\sigma_{xx} & \sigma_{xy}\\
+\sigma_{yx} & \sigma_{yy}\\
+  \end{array}\right]
+\]
+
+This is called a covariance matrix. The diagonals are variances and
+the off-diagonals are covariances. The covariance can be larger,
+depending on the number of random variables, but it's always square.
+
+
+\section{Sample Correlation}
+
+One of the properties of covariance, and thus sample covariance, is
+that $\Cov(X,Y) \leq \sqrt{\Var(x)\Var(y)}$. That means there is a
+maximum value. And of course the minimum magnitude is $0$. Thus we can
+rescale covariance to get correlation:
+
+\begin{equation}
+  r_{xy} = \frac{\sigma_{xy}}{\sigma_x \sigma_y}
+\end{equation}
+
+This is the equation for sample correlation.  It runs from $-1$ to $1$
+and removes the variance of the two random variables from the
+equation.
+
+
+
+\end{tdoc}
+
+\end{document}
