@@ -111,7 +111,7 @@ Note, the above equation must be evaluated numerically. [Draw a
 Let's return to the geometric distribution. What if we're interested
 in solving this equation? [Draw a Picture]
 \[
-P(n < x) = 0.9
+\argmin_x P(1 \geq n \leq x) = 0.9
 \]
 What is the number of trials for which there is a 90\% probability we
 succeeded? This called a \emph{Prediction Interval}. This generally
@@ -122,6 +122,17 @@ interval allows us to give a worst-case value, where we are wrong
 about it 10\% of the time. We state it as ``With a prediction level of
 10\%, the number of posts I will see before liking one is 15''.
 
+The interval should also exceed or be equal to the desired probability. The reason for the $\argmin_x$ is that we could trivially choose $x$ to be
+$\infty$. When we work with other distributions, the lower point can change. For example, in a binomial we would have:
+\[
+\argmin_x P(0 \leq n \leq x) = 0.95
+\]
+
+for a 95\% prediction interval. When the lower-bound is the lowest value in the sample space (i.e., 0 for binomial or 1 for geometric), this is called a ``lower'' prediction interval. We can swap where $x$ goes to create an ``upper'' prediction interval. For example, again with geometric:
+\[
+\argmax_x P(x \leq n \leq \infty) = 0.80
+\]
+Notice we now have an $\argmax_x$. In words, we're asking at what value will 80\% of samples fall above.
 
 \end{tdoc}
 
