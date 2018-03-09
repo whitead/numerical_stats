@@ -73,7 +73,7 @@ Topics
 
 [**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_7/lectures/lecture_2.ipynb):  Presenting Results and Precision, Calculating Sample Statistics, Visualizing 1D data with histograms, Caclulating Sample Statistics with Categories, Visualizing Categorical 1D data with Boxplots and Violin Plots.
 
-[**Lecture 3**](unit_7/lectures/lecture_2.pdf): Sample Statisics for 2D data: Sample Covariance, Sample Correlation.
+[**Lecture 3**](unit_7/lectures/lecture_3.pdf): Sample Statisics for 2D data: Sample Covariance, Sample Correlation.
 
 [**Lecture 4**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_7/lectures/lecture_4.ipynb): Plotting 2D data (scatter plot) and computing sample covariance/correlation
 
