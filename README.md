@@ -85,9 +85,11 @@ Topics
 
 #### [Unit 9](unit_9) &mdash; Linear Algebra in Python
 
-[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_9/lectures/lecture_1.ipynb): Matrix Algebra (`linalg`), Solving Systems of Equations, Eigenvector/Eigenvalue, Matrix Rank
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_9/lectures/lecture_1.ipynb): Python Tips & Tricks
 
-[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_9/lectures/lecture_2.ipynb): Numerical Differentiation, Numerical Integration via Trapezoidal Rule, Numerical Integration in Scipy, Anonymous Functions (`lambda`)
+[**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_9/lectures/lecture_2.ipynb): Matrix Algebra (`linalg`), Solving Systems of Equations, Eigenvector/Eigenvalue, Matrix Rank
+
+[**Lecture 3**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_9/lectures/lecture_3.ipynb): Numerical Differentiation, Numerical Integration via Trapezoidal Rule, Numerical Integration in Scipy, Anonymous Functions (`lambda`)
 
 #### [Unit 10](unit_10): &mdash;  Hypothesis Testing
 
