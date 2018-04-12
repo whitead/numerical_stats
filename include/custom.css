@@ -2,14 +2,10 @@ html{
     background-color: inherit;
 }
 
-.rendered_html p {
-    font-size: 125%;
+.reveal .slides {
+    overflow-y: auto;
+    overflow-x: hidden;
 }
-
-.reveal .input_area {
-    font-size:150%;
-}
-
 .reveal .rendered_html code {
   border: 0;
   background-color: #ddd;

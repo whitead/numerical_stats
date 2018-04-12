@@ -1,5 +1,8 @@
 {% extends 'slides_reveal.tpl'%}
 {% block post_slides %}
+<style>
+{% include 'custom.css' %}
+</style>
 <script>
 require(
     {
@@ -13,12 +16,22 @@ require(
     ],
     function(head, Reveal){
         // Full list of configuration options available here: https://github.com/hakimel/reveal.js#configuration
-		
-	$('section:first-child > section:first-child').attr('data-background','video.mp4')
         Reveal.initialize({
             controls: false,
             progress: true,
-			slideNumber: 'c / t',
+            // The "normal" size of the presentation, aspect ratio will be preserved
+            // when the presentation is scaled to fit different resolutions. Can be
+            // specified using percentage units.
+            width: 960,
+            height: 700,
+
+            // Factor of the display size that should remain empty around the content
+            margin: 0.1,
+
+            // Bounds for smallest/largest possible scale to apply to content
+            minScale: 0.2,
+            maxScale: 1.5,
+			      slideNumber: 'c / t',
             history: true,
             theme: Reveal.getQueryHash().theme, // available themes are in /css/theme
             transition: 'convex',
@@ -37,12 +50,6 @@ require(
             MathJax.Hub.Rerender(Reveal.getCurrentSlide());
           }
         };
-        Reveal.addEventListener('slidechanged', update);
-        var update_scroll = function(event){
-          $(".reveal").scrollTop(0);
-        };
-        Reveal.addEventListener('slidechanged', update_scroll);
-	
     }
 );
 </script>
