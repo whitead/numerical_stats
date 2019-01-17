@@ -45,7 +45,7 @@ world problems require computers. This course will equip you for that.
 
 \item[Hacker Rank]{Progressively difficult Python exercises: \href{https://www.hackerrank.com}{hackerrank.com}}
 
-\item[Python in Easy Steps]{Accessible book covering Python basics. Bright colors, friendly cartoons that talk to you in the margins.}
+\item[Python in Easy Steps 2$^{\textrm{nd}}$ edition]{Accessible book covering Python basics. Bright colors, friendly cartoons that talk to you in the margins.}
 
 \end{description}
 
@@ -150,7 +150,12 @@ P(A\,\textrm{and}\,B) = P(A)P(B)
 \end{equation}
 
 For now, independence between trials means the outcome of one doesn't
-affect the probability of the other.
+affect the probability of the other. An example would be rolling two
+dice. Each die's roll is independent of the other. Another example
+would be measuring the height of two people. Generally, sequential
+trials are independent. One counter example is drawing cards from a
+deck of cards. If you draw an ace first, there are less aces in the
+deck on your next draw so the two card draws are not independent.
 
 \vspace{0.2cm}
 
@@ -177,14 +182,19 @@ You cannot join samples which are from different sample spaces
 
 \subsection{Events}
 
-Events are collections of samples occurring. Events can overlap, occupy
-entire sample space or be generally messy.
+Forget what you think the word event means. Events mean a specific
+thing in probability theory. Choose a set of elements in your sample
+space. An event occurs if your sample (e.g., the card you draw) is in
+that set of elements of your sample space. Because a ``set'' can
+include any number of elements, you can have events that overlap,
+events that occupy an entire sample space or be generally messy. Here
+are some examples:
 
 \begin{itemize}
 
 \item Roll an odd number
-\item Have a flow greater than 2 kg/s
-\item Have a flow between 2 and 4 kg/s
+\item Draw a 9 from a deck of cards
+\item Roll a 3
 
 \end{itemize}
 
@@ -302,7 +312,7 @@ P(\textrm{combination}) = n P(\textrm{permutation}) = 2 \times \frac{1}{4} = \fr
 \begin{description}
 
 \item [Independence]: For now it means the trials don't affect one
-another. One way to tell is if the trials can be permuted without changing probability, they are
+another. One way to tell is if the trials can be permuted without changing probability, they are likely
 independent.\vspace{0.2cm}\\
 
 \item[{\bf OR}]: Cannot combine statements in different samples spaces, whereas {\bf AND} can cross sample spaces.\vspace{0.2cm}\\
