@@ -61,7 +61,41 @@
   same combination as 3, 2, 1). How did we know there are $l!$
   permutations for each combination? From the rule above.
 
-  \subsubsection{Examples}
+  {\bf if you have $n$ items and are making samples of length $l$, and you allow repeats of the $n$ items you have this many combinations:}
+
+  $$
+  \frac{(n + l - 1)!}{l!(n - 1)!}
+  $$
+
+  This one is a little harder to understand. Look up ``Stars and
+  Bars'' which is a well-known derivation of this formula. {\it One
+    important detail is that we can now have $l > n$ or $l < n$ since we allow
+    repeats}. Let's see an example. Consider the letters D, F, G and
+  I'm making combinations of length 2:
+
+  \begin{enumerate}
+  \item DD
+  \item FF
+  \item GG    
+  \item DF
+  \item DG
+  \item FG
+  \end{enumerate}
+
+  Notice we don't have FD in our list because that's the same combination as DF.  Using our equation above we get
+
+  $$
+  \frac{(3 + 2 - 1)!}{2!(3 - 1)!} = \frac{4\times3\times2\times1}{2\times1\times2\times1} = \frac{24}{4} = 6
+  $$
+
+  For comparison, the number of permutations here is $3^2 = 9$. The
+  three items that differentiate the permutations and combinations are
+  FD, DG, GF.
+
+  We know now all the possible cases for combinations and
+  permutations.
+
+  \subsubsection{More Examples}
 
   Let's say my sample space is 5 digit numbers. How large is it?\\
   $$10^5$$
@@ -77,6 +111,9 @@
 
   What's the sample space size for a draw of 5 cards?\\
   $$\frac{52!}{5!(52 - 5)!} = 2,598,960$$
+
+  How many combinations of rolls of 2 dices are possible?\\
+  $$\frac{(6 + 2 - 1)!}{2!(6 - 1)!} = 21$$
 
 \subsection{Repeated Items in Permutations}
 
