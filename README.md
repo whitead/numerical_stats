@@ -37,7 +37,9 @@ Topics
 
 [**Lecture 1**](unit_2/lectures/lecture_1.pdf): Combinations & Permutations, Multidimensional Sample Spaces, Random Variables, Continuous Probability Distributions
 
-[**Lecture 2**](unit_2/lectures/lecture_2.pdf): Marginals, Joints, Conditionals, Working with Joints/Marginals/Conditionals, Bayes' Theorem, Independence, Compound Conditionals, Conditional Independence, Table of Useful Equations
+[**Lecture 2**](unit_2/lectures/lecture_2.pdf): Marginals, Joints, Independence of Random Variables, Table of Useful Equations
+
+[**Lecture 3**](unit_2/lectures/lecture_3.pdf): Conditionals, Working with Joints/Marginals/Conditionals, Bayes' Theorem, Math Definition Independence, Compound Conditionals, Conditional Independence, Table of Useful Equations
 
 #### [Unit 3](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_3) &mdash; Python Basics
 

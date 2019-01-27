@@ -41,73 +41,17 @@ process is called {\bf marginalizing} and the resulting $\Pr(x)$ is
 called the marginal. Marginalization is especially important if the two pieces of
 the joint are not independent.
 
-\subsection{Conditional Probability Distribution}
-A conditional probability distribution allows us to fix one sample,
-event, or rv in order to calculate another. It is written as
-$\Pr(X=x|Y=y)$. For example, what is the probability of having the flu
-given I'm showing cold/flu symptomps. Conditionals are generally much
-easier specify, understand and measure than joints or marginals.
+\subsection{Revisiting Independence}
 
-\begin{itemize}
-\item The probability I visited node C given that I started in node A and ended in node B
-\item The probability a test shows I have influenza given that I do not have influenza (false negative)
-\item The probability that the sum of two dice is 7 given that one die shows 4 when rolling two dice.
+Recall that we defined independence in terms of multiple samples in Unit 1. Now, we'll discuss independence of \textit{random variables}. Conceptually, independence of two random variables means that if I know the value of one variable, I have no additional evidence for what the value of another random variable is. For example, if I roll two dice I can have a random variable indicating the roll of die 1, $R_1$, and die 2, $R_2$. If I know that $R_1 = 4$, that doesn't help me determine the value of $R_2$ therefore these two random variables are independent. Now consider $R_1$ and the sum of the two dice $S$. If I know that $R_1 = 4$, I know that the sum of the two dice has to be greater than 4. That's because you cannot have a sum of two dice be less than 5 if one of the rolls is 4. Therefore, $R_1$ and $S$ are \textit{not independent}. One way to assess independence is the following theorem which hold for 2 indenpendent random variables:
 
-\end{itemize}
-
-The definition of a conditional probability distribution is
 \begin{equation}
-\Pr(x|y) = \frac{\Pr(x,y)}{\Pr(y)}
+P(X = x, Y = y) = P(X = x) P(Y = y),\, \textrm{If } X \textrm{ and } Y \textrm{ are independent.}
 \end{equation}
 
-A CPD is a full-fledged PMF, so $\sum_\mathcal{X} \Pr(x|y) = 1$ due to
-normalization, sometimes called the law of total probability.  If we
-forget what goes in the denominator on the right-hand-side we can
-quickly see that $\sum_\mathcal{X} \Pr(x,y) / \Pr(y) = 1$ whereas
-$\sum_\mathcal{X} \Pr(x,y) / \Pr(x) \neq 1$.
+We can prove independence if that expression holds for all values of $X$ and $Y$. We can disprove independence by showing it doesn't hold for a single value.
 
-The definition is the same for continuous distributions.
-
-This leads to an alternative way to marginalize:
-\[
-\sum_\mathcal{Y} \Pr(x|y) \Pr(y) = \sum_\mathcal{Y} \Pr(x,y) = \Pr(x)
-\]
-
-
-\subsection{Viewing Conditionals as Sample Space Reduction}
-
-Consider guessing binary numbers at random between 0 and 7:\vspace{0.25cm}
-
-\begin{tabular}{l}
-000\\
-001\\
-010\\
-011\\
-100\\
-101\\
-110\\
-111\\
-\end{tabular}\vspace{0.25cm}
-
-The probability of sampling 4 (100),
-\[
-\Pr(x = 100) = \frac{1}{8}
-\]
-Now, consider the rv $Y$, the number of non-zero bits. What is
-\[
-\Pr(x = 100 | Y = 1)
-\]
-We could rewrite this in terms of the joint and marginal, as
-\[
-\Pr(x = 100 | Y = 1) = \frac{(x = 100, Y = 1)}{Y = 1} = \frac{1 / 8}{3 / 8} = \frac{1}{3}
-\]
-Or we could recognize that the condition of $Y = 1$ reduces the sample
-space to 3, because there are only 3 samples that are consistent with
-$Y = 1$. Thus, the probability of $x = 100$ is $1/3$, since $x = 100$
-has a single permutation and $Q_c$, the conditional sample space is
-$3$.
-
-\section{Tricky Concepts}
+\section{Concept Review}
 
 \begin{description}
 
@@ -128,196 +72,20 @@ $3$.
 \item[Marginal Probability Distribution] A marginal `integrates/sums'
   out other samples/random variables/events we are not interested in.
 
-\item[Joint vs Conditional] People almost never think in terms of
-  joints. Conditionals are usually easier to think about, specify, and
-  be a way to attack problems.
+  \item[Independence of Random Variables] Random variables can be independent and can
+  be numerically evaluated by seeing if the produce of their marginals are equal to their
+  joints.
+
 
 \end{description}
 
- \section{Working with Marginals, Condtionals, and Joints}
-
-\subsubsection{Seasons Example}
-
-The sample space is a product space of the seasons $T$ (Winter (0), Spring
-(1), Summer (2), Fall (3) ) and $W$ if the weather is nice or not (N=nice,
-S=not nice). We know that
-\[
-\begin{array}{lr}
-\Pr(W=N|T=0) = 0 & \Pr(W=N|T=1) = 0.4\\
-\Pr(W=N|T=2) = 0.8 & \Pr(W=N|T=3) = 0.7\\
-\end{array}
-\]
-\[
-P(T=t) = \frac{1}{4}
-\]
-
-What is the probability that the weather is not nice? Use
-marginalization of conditional:
-
-\[
-\Pr(W=S) = \sum_\mathcal{T} \Pr(W=S | T) P(T) = 0.25(1 - 0) + 0.25(1 - 0.4) + 0.25(1 - 0.8) + 0.25(1 - 0.7)
-\]
-\[
-\Pr(W=S) = 0.525
-\]
-
-What is the probability that it is fall given that it is nice? Start with definition of conditional :
-\[
-\Pr(T=3|W=N) = \frac{\Pr(T=3, W=N)}{\Pr(W=N)}
-\]
-We know that $\Pr(T=3, W=N) = \Pr(W=N|T=3)\Pr(T=3)$ due to definition of conditional:
-\[
-\Pr(T=3|W=N) = \frac{\Pr(W=N|T=3)\Pr(T=3)}{\Pr(W=N)}
-\]
-Finally, we can use $\Pr(W=N) = 1 - \Pr(W=S)$, the {\bf NOT} rule:
-\[
-\Pr(T=3|W=N) = \frac{0.7\times 0.25}{1 - 0.525} = 0.368
-\]
-
-\subsection{Bayes' Theorem}
-
-We derived a well-known equation in that example called Bayes' Theorem:
-
-\begin{equation}
-\Pr(A|B) = \frac{\Pr(B|A)\Pr(A)}{\Pr(B)}
-\end{equation}
-
-This is useful to swap the order of conditionals
-
-\subsection{Independence}
-Finally, we are ready to define independence. If the random variables
-$X$ and $Y$ are independent, then
-\begin{equation}
-\Pr(x|y) = \Pr(x)
-\end{equation}
-This implies via Bayes' Theorem
-\begin{equation}
-\Pr(y|x) = \Pr(y)
-\end{equation}
-And also implies via CPF definition
-\begin{equation}
-\Pr(x,y) = \Pr(x)\Pr(y)
-\end{equation}
-which was our {\bf AND} rule from last lecture.
-
-\vspace{0.2cm}
-In our weather example, is the season and weather independent?
-\[
-\Pr(W=N|T=0) \neq P(W=N|T=1)
-\]
-so no.
-
-
-\subsection{Compound Conditionals}
-When writing conditionals, this is a common short-hand:
-\[
-\Pr (x = 2\, | \,Y = A, Z = 0)
-\]
-for
-\[
-\Pr ([x = 2]\,|\, [Y = A, Z = 0])
-\]
-The conditional is always evaluated last, for example:
-\[
-\Pr(x = 2, Y = A\, | \,Z = 0)
-\]
-is also possible and means the probability of the joint $(x=2, Y=A)$
-given that $Z = 0$
-
-
-
-\subsection{Conditional Independence}
-$X_0$ and $X_1$ are conditionally independent given $Z$ if
-\begin{equation}
-\Pr(X_0 | Z, X_1) = \Pr(X_0 | Z)
-\end{equation}
-
-which is equivalent to
-
-\begin{equation}
-\Pr(X_0, X_1 | Z) = \Pr(X_0 | Z)\Pr(X_1 | Z)
-\end{equation}
-
-
-To use conditional independence, you must condition on $Z$. For
-example, if I want to calculate $\Pr(X_0, X_1)$, I'll need to
-condition it. Marginalizing a conditional is one way to get that
-quantity, using a compound conditional:
-\[
-\Pr(X_0, X_1) = \sum_\mathcal{Z}\Pr(X_0, X_1 | Z) \Pr(Z)
-\]
-Now it is in a form where the conditional independence applies:
-\[
-\Pr(X_0, X_1) = \sum_\mathcal{Z}\Pr(X_0 | Z) \Pr(X_1 | Z)
-\]
-This is common for sequential trials, where the trials are independent
-when conditioned on some underlying property, but dependent if we do
-not know the property. For example, let's say I have two dice, one
-that is fair and one that follows the biased die model we saw in
-class. Let's further assume that $P(D = 0) = 0.1$, where $D$ indicates
-the chosen die.
-\[
-\Pr(X=x | D = 0) = \frac{1}{6}
-\]
-\[
-\Pr(X=x | D = 1) = \frac{x}{21}
-\]
-
-If I know which die I'm rolling, then every roll is independent
-as expected:
-\[
-\Pr (X_0 = 6, X_1 = 1 | D) = \Pr (X_0 = 6 | D) \Pr (X_1 = 1 | D)
-\]
-however, consider
-\[
-\Pr (X_1 = 1 | X_0 = 6) = \frac{\Pr(X_1 = 1, X_0 = 6)}{\Pr (X_0 = 6)}
-\]
-As above, we'll try to condition it to exploit conditional
-independence.
-\[
-\Pr(X_1 = 1, X_0 = 6) = \Pr(X_1 = 1 | D = 0) \Pr(X_0 = 6 | D = 0) \Pr (D = 0) +
-\]
-\[
-\Pr(X_1 = 1 | D = 1) \Pr(X_0 = 6 | D = 1) \Pr (D = 1)
-\]
-\[
-\Pr(X_1 = 1, X_0 = 6) = \frac{1}{6}\frac{1}{6}\frac{1}{10} + \frac{1}{21}\frac{6}{21}\frac{9}{10} = 0.0150
-\]
-\[
-\Pr(X_0 = 6) = \sum_{X_1} \Pr(X_1, X_0 = 6) = \frac{1}{6}\frac{1}{10}\underbrace{\sum_{x} \frac{1}{6}}_{=1} + \frac{6}{21}\frac{9}{10} \underbrace{\sum_{x} \frac{x}{21}}_{=1}
-\]
-\[
-\Pr(X_0 = 6)  = 0.274
-\]
-\[
-\Pr (X_1 = 1 | X_0 = 6) = \frac{0.0150}{0.274} = 0.0549
-\]
-Finally, to show they are not independent:
-\[
-\Pr(X_1 = 1) = \sum_{X_1} \Pr(X_1 = 1, X_0) = \frac{1}{6}\frac{1}{10}\underbrace{\sum_{x} \frac{1}{6}}_{=1} + \frac{1}{21}\frac{9}{10} \underbrace{\sum_{x} \frac{x}{21}}_{=1} = 0.0595
-\]
-
-The intuition here is that the marginal of $X_1 = 1$ considers both
-die according to the die marginals. However, knowing that $X_0 = 6$
-shifts it so that the biased die is more likely. This can be seen with
-Bayes theorem to:
-\[
-\Pr(D = 1 | X_0 = 6) \neq \Pr (D=1)
-\]
-and thus $\Pr (X_1 | X_0 = 6)$ changes from $\Pr(X_1)$.
 
 \subsection{Table of Equations}
 
   \begin{tabular}{lr}
     $P(x) = \sum_y P(x,y)$ & Definition of Marginal\vspace{0.15cm}\\
-    $P(x|y) = \frac{P(x,y)}{P(y)}$ & Definition of Conditional\vspace{0.15cm}\\
-    $P(x,y) = P(x|y)P(y)$ & Definition of Conditional\vspace{0.15cm}\\
-    $\sum_x P(x|y) = 1$ & Law of Total Probability/Normalization\vspace{0.15cm}\\
-    $\sum_y P(x|y)P(y) = P(x)$ & Marginilzation of Conditional\vspace{0.15cm}\\
-    $P(x|y) = \frac{P(y|x)P(x)}{P(y)}$ & Bayes' Theorem\vspace{0.15cm}\\
+    $\sum_x P(x) = 1$ & Law of Total Probability/Normalization\vspace{0.15cm}\\
     $P(x,y) = P(x)P(y)$ & Definition of Independence\vspace{0.15cm}\\
-    $P(x | y) = P(x)$ & Independence Property (x,y independent)\vspace{0.15cm}\\
-    $P(x,y | z) = P(x|z)P(y|z)$ & Conditional Independence\vspace{0.15cm}\\
   \end{tabular}
 
 \end{tdoc}
