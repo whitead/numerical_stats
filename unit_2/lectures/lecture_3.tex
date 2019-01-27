@@ -11,36 +11,6 @@
   \subsection*{Companion Reading}
   \textbf{Bulmer} Chapter 3
 
-\subsection{Joint Probability Distribution}
-We will indicate the probability that two rvs, $X$ and $Y$, adopt a
-particular value $x$ and $y$ \emph{simultaneously} as $\Pr(x,y)$. This
-is called a joint probability distribution. Joints indicate
-simultaneous occurance, unlike our {\bf AND} from last lecture.
-
-To treat successive observations, we simply rearrange our current
-definitions. Take flipping a coin. We redefine our sample space to be
-the product space of trials flip 1 and flip 2, so $(H,H)$, $(H,T)$,
-$(T,H)$ and $(T,T)$ where $H=$heads, $T=$tails. Next, we say $X$ is the
-observation of trial 1 and $Y$ is the observation of trial 2.
-
-The continuous analogue is $p(x,y)$, which is not meaningful unless
-integrated over an area. Example: observing particle in fixed area.
-
-\subsection{Marginal Probability Distribution}
-The marginal probability distribution function is defined as
-\begin{equation}
-\Pr(x) = \sum_y P(x,y)
-\end{equation}
-The marginal means the probability of $X=x, Y=y_0$ \textbf{OR} $X=x, Y=y_1$ \textbf{OR}
-$X=x, Y=y_2$, etc. For example, if $X$ is the weather and $Y$ is the
-day of the week, it is the probability of the weather being a particular value (e.g., nice) `averaged' over
-all possible weekdays.
-
-The marginal allows us to remove a rv or sample space dimension. That
-process is called {\bf marginalizing} and the resulting $\Pr(x)$ is
-called the marginal. Marginalization is especially important if the two pieces of
-the joint are not independent.
-
 \subsection{Conditional Probability Distribution}
 A conditional probability distribution allows us to fix one sample,
 event, or rv in order to calculate another. It is written as
