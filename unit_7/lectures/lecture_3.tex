@@ -45,6 +45,8 @@ some math and such to come up with the following properties of covariance:
 
 \item $\Cov(X,X) = \Var(x)$\\
 
+\item $\Cov(X + Z, Y) = \Cov(X,Y) + \Cov(Z, Y)$\\
+
 \item $\Cov(aX, bY) = ab\Cov(X,Y)$\\
 
 \item $\Cov(X + a, Y + b) = \Cov(X,Y)$\\
@@ -59,7 +61,7 @@ Let's say the normal body temperature for a person follows a $\mu = 98.6 ^{\circ
 \Cov(F, T) = \Cov(1.1\times T, T) = 1.1\times \Cov(T, T) = 1. \Var(T)
 \]
 \[
-\Cov(F,T) = 1.1\times \sigma^2 = 0.55^\circ \textrm{F}
+\Cov(F,T) = 1.1\times \sigma^2 = 0.275^\circ \textrm{F}^2
 \]
 
 After exercise, your temperature is $E = T + I$, where $I$ is an
