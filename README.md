@@ -132,10 +132,6 @@ Topics
 
 [**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_15/lectures/lecture_1.ipynb): Next steps to learn more about numerical methods, statistics, and programming
 
-Extra Topics
------
-
-
 #### [Unit 16](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_16): &mdash; MATLAB
 
 [**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_16/lectures/lecture_1.ipynb): An overview of MATLAB, the Jupyter Hub server and Excel
@@ -146,6 +142,7 @@ Extra Topics
 
 [**Lecture 2**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_17/lectures/lecture_2.ipynb): Introduction to HTML, CSS, JS and modifying notebook style
 
-#### [Unit 18](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_18): &mdash; Sampling and Likelihood Modeling
+#### [Unit 18](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_18): &mdash; Design of Experiments
 
+[**Lecture 1**](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_18/lectures/lecture_1.ipynb): Tables of experiments, vocabulary of design of experiments, ANOVA, factorial design, fractional factorial design, nuisance factors, blocking
 
