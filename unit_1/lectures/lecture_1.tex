@@ -192,9 +192,9 @@ are some examples:
 
 \begin{itemize}
 
-\item Roll an odd number
-\item Draw a 9 from a deck of cards
-\item Roll a 3
+\item Roll an odd number. The sample space is $\{1,2,3,4,5,6\}$, the set defining the event is $\{1,3,5\}$
+\item Draw a 9 from a deck of cards. The sample space is 52 cards, the set defining the event is $\{9\}$
+\item Roll a number less than 3. The sample space is $\{1,2,3,4,5,6\}$, the set defining the event is $\{2, 1\}$
 
 \end{itemize}
 
@@ -203,21 +203,21 @@ If we are rolling a fair die (all probabilities equal), the probability of rolli
 
 
 \begin{equation}
-  E = \{1, 3, 5\}, \quad P(E) = \sum_E P(e) = P(1) + P(3) + P(5) = \frac{1}{6}  + \frac{1}{6} + \frac{1}{6} = \frac{1}{2}
+  E = \{1, 3, 5\}, \quad P(E) = \sum_{e \in E} P(e) = P(1) + P(3) + P(5) = \frac{1}{6}  + \frac{1}{6} + \frac{1}{6} = \frac{1}{2}
 \end{equation}
 \vspace{0.5cm}
 
 {\bf AND} and {\bf NOT} apply to probabilities of events. {\bf OR}
 only applies if the events do not overlap (mutually exclusive). For
-example if event A is roll an odd number and event B is roll a 3,
+example if event A is roll an odd number {$A = \{1,3,5\}$} and event B is roll a 3 ($B = \{3\}$),
 event A includes event B meaning the normal {\bf OR} does not
-apply. To deal with this, generally you redefine your event or
+apply. To deal with this, generally you redefine your event or you
 compute the intersection $P(A\cap B)$ and use:
 \begin{equation}
 P(A\,\textrm{or}\,B) = P(A) + P(B) - P(A \cap B)
 \end{equation}
-I hesitate to say $P(A \cap B)$ means probability of $A$ and $B$
-occurring, because that sounds similar to what was above. Think
+$P(A \cap B)$ doesn't mean the probability of $A$ AND $B$
+occurring like above because it is about events whereas the {\bf AND} rule above is about samples. Think
 instead that $P(A \cap B)$ is the probability of $A$ and $B$ occurring
 simultaneously. Alternatively, $P(A \cap B)$ is the sum of
 probabilities of the elements in the sample space that overlap in $A$
@@ -329,7 +329,7 @@ finite everywhere, it can be normalized.
   meaning we generated a sample. An event is a set of samples, where
   if any elements of the set occur then we say the event occured. An
   example of an event is the set of ${1,5}$ for rolling a die. The
-  observation, or generation of a sample, could be 1 for example.
+  observation, or generation of a sample, is the outcome of a die roll (e.g., rolling a 1).
 
 \end{description}
 
