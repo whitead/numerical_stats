@@ -42,17 +42,27 @@
   for each first letter there are two possibilities. Then knowing the
   first two letters, there is only one possibility for the last: $3 \times 2 \times 1$.
 
-  {\bf if you have $n$ items and are making samples of length $l$, but you disallow repeats of the $n$ items you have this many permutations:}
+  {\bf if you have $n$ items and are making samples of length $l$, but
+    you disallow repeats (no replacement) of the $n$ items you have
+    this many permutations:}
 
   $$  \frac{n!}{(n - l)!}$$
 
-  This is similar to the equation above, but our factorial starts at
-  $n$ and counts down until we've exhausted $l$. For example, if we
+  Disallowing repeats here means, like above, if we use a letter once
+  we cannot use it again in the word. We can't make `cc' from the
+  letters `cat' because the `c' cannot be repeated. This is usually
+  called \textbf{without replacement}. Once we use a `c', we do not
+  replace it in our list of available items.
+
+  The equation above is similar to the above, but our factorial starts
+  at $n$ and counts down until we've exhausted $l$. For example, if we
   have the letters A, B, C, D and E and are making all 3-letter
   combinations, we have: $5 \times 4 \times 3$. That's what the
   equation above is.
 
-  {\bf if you have $n$ items and are making samples of length $l$, but you disallow repeats of the $n$ items you have this many combinations:}
+  {\bf if you have $n$ items and are making samples of length $l$, but
+    you disallow repeats (without replacement) of the $n$ items you have
+    this many combinations:}
 
   $$  \frac{n!}{l!(n - l)!} = \binom{n}{l}$$
 
@@ -61,14 +71,16 @@
   same combination as 3, 2, 1). How did we know there are $l!$
   permutations for each combination? From the rule above.
 
-  {\bf if you have $n$ items and are making samples of length $l$, and you allow repeats of the $n$ items you have this many combinations:}
+  {\bf if you have $n$ items and are making samples of length $l$, and
+    you allow repeats (with replacement) of the $n$ items you have
+    this many combinations:}
 
   $$
   \frac{(n + l - 1)!}{l!(n - 1)!}
   $$
 
   This one is a little harder to understand. Look up ``Stars and
-  Bars'' which is a well-known derivation of this formula. {\it One
+  Bars'' on Wikipedia which is a well-known derivation of this formula. {\it One
     important detail is that we can now have $l > n$ or $l < n$ since we allow
     repeats}. Let's see an example. Consider the letters D, F, G and
   I'm making combinations of length 2:
@@ -89,11 +101,11 @@
   $$
 
   For comparison, the number of permutations here is $3^2 = 9$. The
-  three items that differentiate the permutations and combinations are
-  FD, DG, GF.
+  three items that that are permutations but not combinations are FD,
+  DG, GF.
 
-  We know now all the possible cases for combinations and
-  permutations.
+  You now know all the possible cases for combinations and
+  permutations! Good job!
 
   \subsubsection{More Examples}
 
@@ -126,7 +138,7 @@ the letters in the word `DAD':
 \item ADD
 \end{enumerate}
 
-However, our previous rule tells us that there should be $3! = 6$ permutations. The reason why is that we `lose' some permutations because
+However, our previous rule tells us that there should be $3! = 6$ permutations. The reason why we don't have 6 is that we `lose' some permutations because
 the two $D$s are interchangeble. For each of the words we could swap the two Ds and keep the same word. Thus for each two permutations according
 to our original rule, there is actually only one unique permutations:  $$ \frac{3!}{2} = 3$$
 
@@ -229,7 +241,9 @@ event. Why?
 \section{Random Variables}
 
 A random variable is a \emph{function} whose domain is a sample space
-and whose range is continuous or discrete values. Because a random
+and whose range is continuous or discrete values. It is like a
+generalization of events. Events are true or false, but random
+variables take on any possible numerical value. Because a random
 variable is defined in a sample space, we may compute probabilities
 for each of its possible outputs.
 
