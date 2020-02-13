@@ -70,6 +70,11 @@ important distribution for considering permutations. Its equation is:
 \begin{equation}
 \Pr(X=n) =  {N \choose n} p^n(1 - p)^{N - n}
 \end{equation}
+
+\begin{equation}
+  {N \choose n} = \frac{N!}{(N - n)! n!}
+\end{equation}
+
 and the expected value is $Np$. The variance is $Np(1-p)$. An example
 is the number of boys in a family of eight children.
 
@@ -97,8 +102,8 @@ distribution.
 \subsection{Exponential Distribution}
 The exponential distribution is a continuous distribution with a
 support of $[0,\infty)$. It generally describes time between events,
-  especially events whose occurrence follow the Poisson distribution
-  (rare events). Its distribution is
+  especially events whose occurrence follow the Poisson distribution.
+  Its distribution is
 \begin{equation}
 p(x) = \lambda e^{-\lambda x}
 \end{equation}
