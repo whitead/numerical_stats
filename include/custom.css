@@ -2,6 +2,10 @@ html{
     background-color: inherit;
 }
 
+body {
+    cursor: none;
+}
+
 .reveal .slides {
     overflow-y: auto;
     overflow-x: hidden;
