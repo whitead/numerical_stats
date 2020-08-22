@@ -4,7 +4,7 @@ These are lecture notes and homeworks for a course taught at the
 University of Rochester by Andrew White in the Chemical Engineering
 Department. The course is taught using Jupyter Notebooks.
 
-## Course Descriptions
+## Course Description
 
 This course provides an introduction to numerical methods and
 engineering statistics for chemical engineers. Students learn to use
@@ -22,7 +22,7 @@ analysis.
 
 See [project](project/) folder.
 
-## List of Topics
+## Table of Contents
 
 
 #### [Unit 1](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_1) &mdash; Introduction
