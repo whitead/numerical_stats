@@ -1,12 +1,10 @@
-Numerical Methods and Statistics
-====
+# Numerical Methods and Statistics
 
 These are lecture notes and homeworks for a course taught at the
 University of Rochester by Andrew White in the Chemical Engineering
 Department. The course is taught using Jupyter Notebooks.
 
-Course Descriptions
----
+## Course Descriptions
 
 This course provides an introduction to numerical methods and
 engineering statistics for chemical engineers. Students learn to use
@@ -20,13 +18,11 @@ probability theory, the central limit theorem, hypothesis testing,
 confidence intervals, regression, model fitting and basic error
 analysis.
 
-Projects
-----
+## Projects
 
 See [project](project/) folder.
 
-Topics
-----
+## List of Topics
 
 
 #### [Unit 1](https://nbviewer.jupyter.org/github/whitead/numerical_stats/blob/master/unit_1) &mdash; Introduction
