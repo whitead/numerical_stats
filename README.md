@@ -4,6 +4,8 @@ These are lecture notes and homeworks for a course taught at the
 University of Rochester by Andrew White in the Chemical Engineering
 Department. The course is taught using Jupyter Notebooks.
 
+View the course online: [whitead.github.io/numerical_stats/](https://whitead.github.io/numerical_stats/)
+
 ## Course Description
 
 This course provides an introduction to numerical methods and
